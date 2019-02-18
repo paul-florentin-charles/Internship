@@ -7,6 +7,7 @@
 - Audio Style Transfer : [link](https://www.researchgate.net/publication/320754682 "Audio Style Transfer")
 - Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis of Musical Notes")
 - Adversarial Audio Synthesis : [link](https://arxiv.org/abs/1802.04208 "Adversarial Audio Synthesis")
+- A Universal Music Translation Network : [link](https://arxiv.org/abs/1805.07848 "Music Translation Network")
 
 ### Vulgarization Articles
 
