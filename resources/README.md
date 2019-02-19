@@ -24,7 +24,8 @@
 - Google voice search: faster and more accurate : [link](https://ai.googleblog.com/2015/09/google-voice-search-faster-and-more.html "Google Voice Search")
 - Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
 - What are causal convolutions ? : [link](https://www.quora.com/What-are-causal-convolutions "Causal Convolutions")
-
+- Neural Music Synthesis for Flexible Timbre Control : [link](https://neural-music-synthesis.github.io/ "Neural Music Synthesis")
+- Autoregressive Models : [link](https://deepgenerativemodels.github.io/notes/autoregressive/ "Autoregressive Models")
 
 ## Works
 
@@ -37,3 +38,4 @@
 
 - The MAESTRO Dataset : [link](https://magenta.tensorflow.org/datasets/maestro "MAESTRO")
 - The NSynth Dataset : [link](https://magenta.tensorflow.org/datasets/nsynth "NSynth")
+- Classical Piano MIDI: [link](http://www.piano-midi.de/ "Piano MIDI")
