@@ -1,5 +1,6 @@
 # Resources
 
+
 ## Written Documents
 
 ### Research Articles
@@ -22,12 +23,15 @@
 - Synthèse sonore/musicale basée sur l’apprentissage profond : [link](http://dept-info.labri.fr/~hanna/Stages/rapport-de-stage.pdf "Synthèse sonore par apprentissage profond")
 - Google voice search: faster and more accurate : [link](https://ai.googleblog.com/2015/09/google-voice-search-faster-and-more.html "Google Voice Search")
 - Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
+- What are causal convolutions ? : [link](https://www.quora.com/What-are-causal-convolutions "Causal Convolutions")
+
 
 ## Works
 
 - Magenta : [link](https://github.com/tensorflow/magenta "Magenta")
 - NSynth : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/nsynth "NSynth")
 - WaveGAN : [link](https://github.com/chrisdonahue/wavegan "WaveGan")
+
 
 ## Datasets
 
