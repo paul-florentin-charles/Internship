@@ -5,9 +5,10 @@
 ### Research Articles
 
 - Audio Style Transfer : [link](https://www.researchgate.net/publication/320754682 "Audio Style Transfer")
-- Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis of Musical Notes")
+- Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis")
 - Adversarial Audio Synthesis : [link](https://arxiv.org/abs/1802.04208 "Adversarial Audio Synthesis")
 - A Universal Music Translation Network : [link](https://arxiv.org/abs/1805.07848 "Music Translation Network")
+- WaveNet: A Generative Model for Raw Audio : [link](https://arxiv.org/abs/1609.03499 "WaveNet")
 
 ### Vulgarization Articles
 
@@ -18,6 +19,8 @@
 ### Miscellaneous
 
 - Synthèse sonore/musicale basée sur l’apprentissage profond : [link](http://dept-info.labri.fr/~hanna/Stages/rapport-de-stage.pdf "Synthèse sonore par apprentissage profond")
+- Google voice search: faster and more accurate : [link](https://ai.googleblog.com/2015/09/google-voice-search-faster-and-more.html "Google Voice Search")
+- Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
 
 ## Works
 
