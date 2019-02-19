@@ -9,6 +9,7 @@
 - Adversarial Audio Synthesis : [link](https://arxiv.org/abs/1802.04208 "Adversarial Audio Synthesis")
 - A Universal Music Translation Network : [link](https://arxiv.org/abs/1805.07848 "Music Translation Network")
 - WaveNet: A Generative Model for Raw Audio : [link](https://arxiv.org/abs/1609.03499 "WaveNet")
+- Neural Music Synthesis for Flexible Timbre Control : [link](https://arxiv.org/abs/1811.00223 "Neural Music Synthesis")
 
 ### Vulgarization Articles
 
