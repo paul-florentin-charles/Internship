@@ -26,7 +26,7 @@
 - Autoregressive Models : [link](https://deepgenerativemodels.github.io/notes/autoregressive/ "Autoregressive Models")
 - What is a receptive field in a CNN ? : [link](https://www.quora.com/What-is-a-receptive-field-in-a-convolutional-neural-network "Receptive Field")
 - Convolutional neural network : [link](https://en.wikipedia.org/wiki/Convolutional_neural_network "CNN")
-
+- Understanding Activation Functions in Deep Learning : [link](https://www.learnopencv.com/understanding-activation-functions-in-deep-learning/ "Activation functions")
 
 ## Works
 
@@ -41,6 +41,7 @@
 - The MAESTRO Dataset : [link](https://magenta.tensorflow.org/datasets/maestro "MAESTRO")
 - The NSynth Dataset : [link](https://magenta.tensorflow.org/datasets/nsynth "NSynth")
 - Classical Piano MIDI: [link](http://www.piano-midi.de/ "Piano MIDI")
+- MagnaTagATune Dataset : [link](http://mirg.city.ac.uk/codeapps/the-magnatagatune-dataset "MagnaTagATune")
 
 
 ## Miscellaneous

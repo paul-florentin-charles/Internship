@@ -1,5 +1,6 @@
 # WaveNet: A Generative Model for Raw Audio
 
+
 ## Introduction
 
 *Can we use neural networks to generate coherent audio waveforms ?*
@@ -8,6 +9,7 @@ However, unlike images, it is a one-dimension data.
 Usage of **autoregressive generative models** to address this problematic.
 *WaveNet* is hereby described, and asserted better than all state-of-the-art TTS methods.
 It is based on conditional probabilities.
+
 
 ## WaveNet
 
@@ -21,11 +23,11 @@ Output : vector of probabilities for $x_i$ obtained using **softmax function**, 
 This vector is then modified to maximize the **log-likelihood** of $x_t$ regarding the parameters.
 These parameters being the possible values for $x_i$ represented by the vector of probabilities.
 
----
+### Dilated causal convolutions
 
 *Causal convolutions* imply a good ordering of the samples.
-> Training time : parallel (all samples are known)
-> Generating time : sequential
+- Training time : parallel (all samples are known)
+- Generating time : sequential
 Issues to increase **receptive field**
 - increase amount of layers
 - increase filters size
@@ -34,5 +36,15 @@ It consists in skipping values with a given step, so that the filter size can be
 Moreover, the output size is kept identitical to the input size.
 Enables to get large receptive fields while keeping a few layers.
 
----
+### Softmax distributions
 
+*Softmax* is to be applied on large vectors (65,536 for a bit-depth of 16).
+Therefore we apply a **$\mu$-law** first ($\mu = 255$), and quantize it to 256 values.
+This non-linear function induces a more natural reconstruction, especially for speech.
+It reduces the dynamic range with its logarithm, allowing fine details to be perceived.
+
+### Gated activation units
+
+Non-linear formula that works better than *ReLU*.
+$z = tanh(W_{f,k} * x) \odot \sigma (W_{g,k} * x)$
+With *W* representing **convolutional filters**, and $\odot$ a element-wise multiplication.
