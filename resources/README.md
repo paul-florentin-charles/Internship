@@ -1,9 +1,9 @@
 # Resources
 
 
-## Written Documents
+## Articles
 
-### Research Articles
+### Research
 
 - Audio Style Transfer : [link](https://www.researchgate.net/publication/320754682 "Audio Style Transfer")
 - Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis")
@@ -12,26 +12,28 @@
 - WaveNet: A Generative Model for Raw Audio : [link](https://arxiv.org/abs/1609.03499 "WaveNet")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://arxiv.org/abs/1811.00223 "Neural Music Synthesis")
 
-### Vulgarization Articles
+### Vulgarization
 
 - WaveNet: A Generative Model for Raw Audio : [link](https://deepmind.com/blog/wavenet-generative-model-raw-audio/ "WaveNet")
 - NSynth: Neural Audio Synthesis : [link](https://magenta.tensorflow.org/nsynth "NSynth")
 - Music Transformer: Generating Music with Long-Term Structure : [link](https://magenta.tensorflow.org/music-transformer "Music Transformer")
 
-### Miscellaneous
 
-- Synthèse sonore/musicale basée sur l’apprentissage profond : [link](http://dept-info.labri.fr/~hanna/Stages/rapport-de-stage.pdf "Synthèse sonore par apprentissage profond")
-- Google voice search: faster and more accurate : [link](https://ai.googleblog.com/2015/09/google-voice-search-faster-and-more.html "Google Voice Search")
+## Definitions
+
 - Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
 - What are causal convolutions ? : [link](https://www.quora.com/What-are-causal-convolutions "Causal Convolutions")
-- Neural Music Synthesis for Flexible Timbre Control : [link](https://neural-music-synthesis.github.io/ "Neural Music Synthesis")
 - Autoregressive Models : [link](https://deepgenerativemodels.github.io/notes/autoregressive/ "Autoregressive Models")
+- What is a receptive field in a CNN ? : [link](https://www.quora.com/What-is-a-receptive-field-in-a-convolutional-neural-network "Receptive Field")
+- Convolutional neural network : [link](https://en.wikipedia.org/wiki/Convolutional_neural_network "CNN")
+
 
 ## Works
 
 - Magenta : [link](https://github.com/tensorflow/magenta "Magenta")
 - NSynth : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/nsynth "NSynth")
 - WaveGAN : [link](https://github.com/chrisdonahue/wavegan "WaveGan")
+- WaveNet TensorFlow : [link](https://github.com/ibab/tensorflow-wavenet "WaveNet")
 
 
 ## Datasets
@@ -39,3 +41,10 @@
 - The MAESTRO Dataset : [link](https://magenta.tensorflow.org/datasets/maestro "MAESTRO")
 - The NSynth Dataset : [link](https://magenta.tensorflow.org/datasets/nsynth "NSynth")
 - Classical Piano MIDI: [link](http://www.piano-midi.de/ "Piano MIDI")
+
+
+## Miscellaneous
+
+- Synthèse sonore/musicale basée sur l’apprentissage profond : [link](http://dept-info.labri.fr/~hanna/Stages/rapport-de-stage.pdf "Synthèse sonore par apprentissage profond")
+- Google voice search: faster and more accurate : [link](https://ai.googleblog.com/2015/09/google-voice-search-faster-and-more.html "Google Voice Search")
+- Neural Music Synthesis for Flexible Timbre Control : [link](https://neural-music-synthesis.github.io/ "Neural Music Synthesis")
