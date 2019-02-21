@@ -12,6 +12,8 @@
 - WaveNet: A Generative Model for Raw Audio : [link](https://arxiv.org/abs/1609.03499 "WaveNet")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://arxiv.org/abs/1811.00223 "Neural Music Synthesis")
 - Parallel WaveNet: Fast High-Fidelity Speech Synthesis : [link](https://arxiv.org/abs/1711.10433 "Parallel WaveNet")
+- SampleRNN: An Unconditional End-to-End Neural Audio Generation Model : [link](https://arxiv.org/abs/1612.07837 "SampleRNN")
+- Tacotron: Towards End-to-End Speech Synthesis : [link](https://arxiv.org/abs/1703.10135 "Tacotron")
 <!---
 - Unsupervised speech representation learning using WaveNet autoencoders : [link](https://arxiv.org/pdf/1901.08810v1.pdf "Unsupervised speech representation learning")
 -->
@@ -26,23 +28,22 @@
 
 ## Definitions
 
-- Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
 - What are causal convolutions ? : [link](https://www.quora.com/What-are-causal-convolutions "Causal Convolutions")
 - Autoregressive Models : [link](https://deepgenerativemodels.github.io/notes/autoregressive/ "Autoregressive Models")
 - What is a receptive field in a CNN ? : [link](https://www.quora.com/What-is-a-receptive-field-in-a-convolutional-neural-network "Receptive Field")
 - Convolutional neural network : [link](https://en.wikipedia.org/wiki/Convolutional_neural_network "CNN")
 - Understanding Activation Functions in Deep Learning : [link](https://www.learnopencv.com/understanding-activation-functions-in-deep-learning/ "Activation functions")
 - Autoencoder : [link](https://en.wikipedia.org/wiki/Autoencoder "Autoencoder")
-<!---
 - Artificial neural network: [link](https://en.wikipedia.org/wiki/Artificial_neural_network "Neural Network")
--->
+
 
 ## Works
 
-- Magenta : [link](https://github.com/tensorflow/magenta "Magenta")
 - NSynth : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/nsynth "NSynth")
 - WaveGAN : [link](https://github.com/chrisdonahue/wavegan "WaveGan")
 - WaveNet TensorFlow : [link](https://github.com/ibab/tensorflow-wavenet "WaveNet")
+- SampleRNN : [link](https://github.com/soroushmehr/sampleRNN_ICLR2017 "SampleRNN")
+- Tacotron : [link](https://github.com/keithito/tacotron "Tacotron")
 
 
 ## Datasets
@@ -58,3 +59,4 @@
 - Synthèse sonore/musicale basée sur l’apprentissage profond : [link](http://dept-info.labri.fr/~hanna/Stages/rapport-de-stage.pdf "Synthèse sonore par apprentissage profond")
 - Google voice search: faster and more accurate : [link](https://ai.googleblog.com/2015/09/google-voice-search-faster-and-more.html "Google Voice Search")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://neural-music-synthesis.github.io/ "Neural Music Synthesis")
+- Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
