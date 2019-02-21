@@ -54,4 +54,4 @@ With *W* representing **convolutional filters**, and $\odot$ a element-wise mult
 They speed up the process. 
 Below is a figure extracted from the paper.
 
-![WaveNet Architecture](https://gitgud.io/polochinoc/internship/tree/master/resources/notes/images/wavenet.png)
+![WaveNet Architecture](https://gitgud.io/polochinoc/internship/raw/master/resources/notes/images/wavenet.png)
