@@ -11,12 +11,17 @@
 - A Universal Music Translation Network : [link](https://arxiv.org/abs/1805.07848 "Music Translation Network")
 - WaveNet: A Generative Model for Raw Audio : [link](https://arxiv.org/abs/1609.03499 "WaveNet")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://arxiv.org/abs/1811.00223 "Neural Music Synthesis")
+- Parallel WaveNet: Fast High-Fidelity Speech Synthesis : [link](https://arxiv.org/abs/1711.10433 "Parallel WaveNet")
+<!---
+- Unsupervised speech representation learning using WaveNet autoencoders : [link](https://arxiv.org/pdf/1901.08810v1.pdf "Unsupervised speech representation learning")
+-->
 
 ### Vulgarization
 
 - WaveNet: A Generative Model for Raw Audio : [link](https://deepmind.com/blog/wavenet-generative-model-raw-audio/ "WaveNet")
 - NSynth: Neural Audio Synthesis : [link](https://magenta.tensorflow.org/nsynth "NSynth")
 - Music Transformer: Generating Music with Long-Term Structure : [link](https://magenta.tensorflow.org/music-transformer "Music Transformer")
+- High-fidelity speech synthesis with WaveNet : [link](https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/ "High-fidelity speech synthesis")
 
 
 ## Definitions
@@ -27,6 +32,10 @@
 - What is a receptive field in a CNN ? : [link](https://www.quora.com/What-is-a-receptive-field-in-a-convolutional-neural-network "Receptive Field")
 - Convolutional neural network : [link](https://en.wikipedia.org/wiki/Convolutional_neural_network "CNN")
 - Understanding Activation Functions in Deep Learning : [link](https://www.learnopencv.com/understanding-activation-functions-in-deep-learning/ "Activation functions")
+- Autoencoder : [link](https://en.wikipedia.org/wiki/Autoencoder "Autoencoder")
+<!---
+- Artificial neural network: [link](https://en.wikipedia.org/wiki/Artificial_neural_network "Neural Network")
+-->
 
 ## Works
 

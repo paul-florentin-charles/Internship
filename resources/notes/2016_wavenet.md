@@ -52,6 +52,6 @@ With *W* representing **convolutional filters**, and $\odot$ a element-wise mult
 ### Residual and skip connections
 
 They speed up the process. 
-Below is a figure extracted from the paper.
+Below is a figure extracted from the paper, that depicts WaveNet's architecture.
 
-![WaveNet Architecture](https://gitgud.io/polochinoc/internship/raw/master/resources/notes/images/wavenet.png)
+![WaveNet Architecture](https://gitgud.io/polochinoc/internship/raw/master/resources/notes/images/wavenet.png "WaveNet Architecture")
