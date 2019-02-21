@@ -24,6 +24,8 @@
 - NSynth: Neural Audio Synthesis : [link](https://magenta.tensorflow.org/nsynth "NSynth")
 - Music Transformer: Generating Music with Long-Term Structure : [link](https://magenta.tensorflow.org/music-transformer "Music Transformer")
 - High-fidelity speech synthesis with WaveNet : [link](https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/ "High-fidelity speech synthesis")
+- An Intuitive Explanation of Convolutional Neural Networks : [link](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/ "Convolutional Neural Network")
+- A Quick Introduction to Neural Networks : [link](https://ujjwalkarn.me/2016/08/09/quick-intro-neural-networks/ "Neural Network")
 
 
 ## Definitions
@@ -60,3 +62,5 @@
 - Google voice search: faster and more accurate : [link](https://ai.googleblog.com/2015/09/google-voice-search-faster-and-more.html "Google Voice Search")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://neural-music-synthesis.github.io/ "Neural Music Synthesis")
 - Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
+- Role of Bias in Neural Networks : [link](https://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks "Bias")
+- Principles of training multi-layer neural network using backpropagation [link](http://home.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html "Backpropagation")
