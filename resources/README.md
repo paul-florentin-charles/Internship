@@ -1,15 +1,14 @@
 # Resources
 
-`oui`
-
-``non``
+> Resources in _italic_ are linked to _NSynth_
+> Resources inside `code environment` are linked to `WaveNet`
 
 ## Articles
 
 ### Research
 
 - Audio Style Transfer : [link](https://www.researchgate.net/publication/320754682 "Audio Style Transfer")
-- Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis")
+- _Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders_ : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis")
 - Adversarial Audio Synthesis : [link](https://arxiv.org/abs/1802.04208 "Adversarial Audio Synthesis")
 - A Universal Music Translation Network : [link](https://arxiv.org/abs/1805.07848 "Music Translation Network")
 - `WaveNet: A Generative Model for Raw Audio` : [link](https://arxiv.org/abs/1609.03499 "WaveNet")
@@ -24,7 +23,7 @@
 ### Vulgarization
 
 - `WaveNet: A Generative Model for Raw Audio` : [link](https://deepmind.com/blog/wavenet-generative-model-raw-audio/ "WaveNet")
-- NSynth: Neural Audio Synthesis : [link](https://magenta.tensorflow.org/nsynth "NSynth")
+- _NSynth: Neural Audio Synthesis_ : [link](https://magenta.tensorflow.org/nsynth "NSynth")
 - Music Transformer: Generating Music with Long-Term Structure : [link](https://magenta.tensorflow.org/music-transformer "Music Transformer")
 - High-fidelity speech synthesis with WaveNet : [link](https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/ "High-fidelity speech synthesis")
 - An Intuitive Explanation of Convolutional Neural Networks : [link](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/ "Convolutional Neural Network")
@@ -44,9 +43,9 @@
 
 ## Works
 
-- NSynth : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/nsynth "NSynth")
+- _NSynth_ : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/nsynth "NSynth")
 - WaveGAN : [link](https://github.com/chrisdonahue/wavegan "WaveGan")
-- WaveNet TensorFlow : [link](https://github.com/ibab/tensorflow-wavenet "WaveNet")
+- `WaveNet TensorFlow` : [link](https://github.com/ibab/tensorflow-wavenet "WaveNet")
 - SampleRNN : [link](https://github.com/soroushmehr/sampleRNN_ICLR2017 "SampleRNN")
 - Tacotron : [link](https://github.com/keithito/tacotron "Tacotron")
 
@@ -54,7 +53,7 @@
 ## Datasets
 
 - The MAESTRO Dataset : [link](https://magenta.tensorflow.org/datasets/maestro "MAESTRO")
-- The NSynth Dataset : [link](https://magenta.tensorflow.org/datasets/nsynth "NSynth")
+- _The NSynth Dataset_ : [link](https://magenta.tensorflow.org/datasets/nsynth "NSynth")
 - Classical Piano MIDI: [link](http://www.piano-midi.de/ "Piano MIDI")
 - MagnaTagATune Dataset : [link](http://mirg.city.ac.uk/codeapps/the-magnatagatune-dataset "MagnaTagATune")
 
@@ -67,3 +66,5 @@
 - Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
 - Role of Bias in Neural Networks : [link](https://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks "Bias")
 - Principles of training multi-layer neural network using backpropagation [link](http://home.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html "Backpropagation")
+- A Recurrent Neural Network Music Generation Tutorial : [link](https://magenta.tensorflow.org/2016/06/10/recurrent-neural-network-generation-tutorial "RNN")
+- _Generate your own sounds with NSynth_ : [link](https://magenta.tensorflow.org/nsynth-fastgen "NSynth")

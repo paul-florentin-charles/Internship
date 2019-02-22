@@ -59,6 +59,13 @@ Below is a figure extracted from the paper, that depicts WaveNet's architecture.
 
 #### Some comments
 
-- *1x1* denotes a fully-connected layer
+- *1x1* denotes convolution with a filter of size 1x1, which reduces the depth to the number of used filters
 - the number of layers is the number of convolution filters
 - **Residual** means we add the original input $x$ to $z$ ($x$ processed through *gated activation unit*)
+
+
+## Glossary
+
+- Autoregressive model
+- Causal convolution
+- Receptive field
