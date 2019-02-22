@@ -1,17 +1,18 @@
 # Resources
 
+`oui`
+
+``non``
 
 ## Articles
 
 ### Research
 
-<font color="red">test</font>
-
 - Audio Style Transfer : [link](https://www.researchgate.net/publication/320754682 "Audio Style Transfer")
 - Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis")
 - Adversarial Audio Synthesis : [link](https://arxiv.org/abs/1802.04208 "Adversarial Audio Synthesis")
 - A Universal Music Translation Network : [link](https://arxiv.org/abs/1805.07848 "Music Translation Network")
-- WaveNet: A Generative Model for Raw Audio : [link](https://arxiv.org/abs/1609.03499 "WaveNet")
+- `WaveNet: A Generative Model for Raw Audio` : [link](https://arxiv.org/abs/1609.03499 "WaveNet")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://arxiv.org/abs/1811.00223 "Neural Music Synthesis")
 - Parallel WaveNet: Fast High-Fidelity Speech Synthesis : [link](https://arxiv.org/abs/1711.10433 "Parallel WaveNet")
 - SampleRNN: An Unconditional End-to-End Neural Audio Generation Model : [link](https://arxiv.org/abs/1612.07837 "SampleRNN")
@@ -22,7 +23,7 @@
 
 ### Vulgarization
 
-- WaveNet: A Generative Model for Raw Audio : [link](https://deepmind.com/blog/wavenet-generative-model-raw-audio/ "WaveNet")
+- `WaveNet: A Generative Model for Raw Audio` : [link](https://deepmind.com/blog/wavenet-generative-model-raw-audio/ "WaveNet")
 - NSynth: Neural Audio Synthesis : [link](https://magenta.tensorflow.org/nsynth "NSynth")
 - Music Transformer: Generating Music with Long-Term Structure : [link](https://magenta.tensorflow.org/music-transformer "Music Transformer")
 - High-fidelity speech synthesis with WaveNet : [link](https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/ "High-fidelity speech synthesis")
