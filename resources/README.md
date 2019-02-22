@@ -5,6 +5,8 @@
 
 ### Research
 
+<font color="red">test</font>
+
 - Audio Style Transfer : [link](https://www.researchgate.net/publication/320754682 "Audio Style Transfer")
 - Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis")
 - Adversarial Audio Synthesis : [link](https://arxiv.org/abs/1802.04208 "Adversarial Audio Synthesis")
@@ -35,8 +37,8 @@
 - What is a receptive field in a CNN ? : [link](https://www.quora.com/What-is-a-receptive-field-in-a-convolutional-neural-network "Receptive Field")
 - Convolutional neural network : [link](https://en.wikipedia.org/wiki/Convolutional_neural_network "CNN")
 - Understanding Activation Functions in Deep Learning : [link](https://www.learnopencv.com/understanding-activation-functions-in-deep-learning/ "Activation functions")
-- Autoencoder : [link](https://en.wikipedia.org/wiki/Autoencoder "Autoencoder")
-- Artificial neural network: [link](https://en.wikipedia.org/wiki/Artificial_neural_network "Neural Network")
+- What is an auto-encoder in machine learning ? : [link](https://www.quora.com/What-is-an-auto-encoder-in-machine-learning "Autoencoder")
+- What is underfitting and overfitting in machine learning and how to deal with it : [link](https://medium.com/greyatom/what-is-underfitting-and-overfitting-in-machine-learning-and-how-to-deal-with-it-6803a989c76 "Underfitting/Overfitting")
 
 
 ## Works

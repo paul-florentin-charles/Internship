@@ -48,6 +48,7 @@ It reduces the dynamic range with its logarithm, allowing fine details to be per
 Non-linear formula that works better than *ReLU*.
 $z = tanh(W_{f,k} * x) \odot \sigma (W_{g,k} * x)$
 With *W* representing **convolutional filters**, and $\odot$ a element-wise multiplication.
+Two different activation functions are combined after convolution is applied to the raw data.
 
 ### Residual and skip connections
 
@@ -55,3 +56,9 @@ They speed up the process.
 Below is a figure extracted from the paper, that depicts WaveNet's architecture.
 
 ![WaveNet Architecture](https://gitgud.io/polochinoc/internship/raw/master/resources/notes/images/wavenet.png "WaveNet Architecture")
+
+#### Some comments
+
+- *1x1* denotes a fully-connected layer
+- the number of layers is the number of convolution filters
+- **Residual** means we add the original input $x$ to $z$ ($x$ processed through *gated activation unit*)
