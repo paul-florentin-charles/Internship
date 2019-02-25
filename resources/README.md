@@ -7,6 +7,8 @@
 
 ### Research
 
+#### Synthesis-related
+
 - Audio Style Transfer : [link](https://www.researchgate.net/publication/320754682 "Audio Style Transfer")
 - _Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders_ : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis")
 - Adversarial Audio Synthesis : [link](https://arxiv.org/abs/1802.04208 "Adversarial Audio Synthesis")
@@ -16,7 +18,12 @@
 - Parallel WaveNet: Fast High-Fidelity Speech Synthesis : [link](https://arxiv.org/abs/1711.10433 "Parallel WaveNet")
 - SampleRNN: An Unconditional End-to-End Neural Audio Generation Model : [link](https://arxiv.org/abs/1612.07837 "SampleRNN")
 - Tacotron: Towards End-to-End Speech Synthesis : [link](https://arxiv.org/abs/1703.10135 "Tacotron")
-<!---
+
+#### Analysis-related
+
+- Calculation of a constant Q spectral transform : [link](https://asa.scitation.org/doi/10.1121/1.400476 "CQT")
+- Signal estimation from modified short-time Fourier transform : [link](https://ieeexplore.ieee.org/document/1164317 "Modified short-time Fourier transform")
+<!--
 - Unsupervised speech representation learning using WaveNet autoencoders : [link](https://arxiv.org/pdf/1901.08810v1.pdf "Unsupervised speech representation learning")
 -->
 
@@ -39,6 +46,8 @@
 - Understanding Activation Functions in Deep Learning : [link](https://www.learnopencv.com/understanding-activation-functions-in-deep-learning/ "Activation functions")
 - What is an auto-encoder in machine learning ? : [link](https://www.quora.com/What-is-an-auto-encoder-in-machine-learning "Autoencoder")
 - What is underfitting and overfitting in machine learning and how to deal with it : [link](https://medium.com/greyatom/what-is-underfitting-and-overfitting-in-machine-learning-and-how-to-deal-with-it-6803a989c76 "Underfitting/Overfitting")
+- Mean squared error : [link](https://en.wikipedia.org/wiki/Mean_squared_error "MSE")
+- What is batch size in neural network ? : [link](https://stats.stackexchange.com/questions/153531/what-is-batch-size-in-neural-network "Batch size")
 
 
 ## Works
@@ -68,3 +77,4 @@
 - Principles of training multi-layer neural network using backpropagation [link](http://home.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html "Backpropagation")
 - A Recurrent Neural Network Music Generation Tutorial : [link](https://magenta.tensorflow.org/2016/06/10/recurrent-neural-network-generation-tutorial "RNN")
 - _Generate your own sounds with NSynth_ : [link](https://magenta.tensorflow.org/nsynth-fastgen "NSynth")
+- Audio pitch-shifting & the Constant-Q transform : [link](https://www.edn.com/electronics-blogs/sound-bites/4421452/Audio-pitch-shifting---the-constant-Q-transform "Constant-Q transform")

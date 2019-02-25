@@ -59,9 +59,17 @@ Below is a figure extracted from the paper, that depicts WaveNet's architecture.
 
 #### Some comments
 
-- *1x1* denotes convolution with a filter of size 1x1, which reduces the depth to the number of used filters
+- *1x1* denotes a 1-D convolution with a filter of size 1
 - the number of layers is the number of convolution filters
 - **Residual** means we add the original input $x$ to $z$ ($x$ processed through *gated activation unit*)
+
+### Conditional WaveNets
+
+$p(x | __h__) = \Pi_{i=1}^N p(x_i | x_1, ..., x_{i-1}, __h__)$
+
+Adding a further condition can be interesting to add extra information such as the speaker's identity.
+This condition can either be global and apply to all probabilities, or local and therefore be a vector of conditions.
+In the case of TTS, it is text information.
 
 
 ## Glossary
@@ -69,3 +77,4 @@ Below is a figure extracted from the paper, that depicts WaveNet's architecture.
 - Autoregressive model
 - Causal convolution
 - Receptive field
+- Softmax function

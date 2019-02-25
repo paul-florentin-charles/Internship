@@ -6,6 +6,7 @@
 | Article | File |
 | ------- | ---- |
 | *WaveNet: A Generative Model for Raw Audio* | `2016_wavenet.md` |
+| *Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders* | `2017_nsynth.md` |
 
 
 ## Help
@@ -13,6 +14,7 @@
 Cheat Sheets
 - [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf "Markdown")
 - [Latex Mathematics](http://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/ "Latex")
+- [GitHub Emoji](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md "GitHub Emoji") *essential*
 
 Tools
 - [StackEdit](https://stackedit.io/app "StackEdit") (to visualize *Markdown*)
