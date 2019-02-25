@@ -1,7 +1,9 @@
 # Resources
 
 > Resources in _italic_ are linked to _NSynth_
+
 > Resources inside `code environment` are linked to `WaveNet`
+
 
 ## Articles
 
@@ -19,10 +21,11 @@
 - SampleRNN: An Unconditional End-to-End Neural Audio Generation Model : [link](https://arxiv.org/abs/1612.07837 "SampleRNN")
 - Tacotron: Towards End-to-End Speech Synthesis : [link](https://arxiv.org/abs/1703.10135 "Tacotron")
 
-#### Analysis-related
+#### Tool-related
 
 - Calculation of a constant Q spectral transform : [link](https://asa.scitation.org/doi/10.1121/1.400476 "CQT")
 - Signal estimation from modified short-time Fourier transform : [link](https://ieeexplore.ieee.org/document/1164317 "Modified short-time Fourier transform")
+- Improved Techniques for Training GANs : [link](https://arxiv.org/abs/1606.03498 "Techniques for GANs")
 <!--
 - Unsupervised speech representation learning using WaveNet autoencoders : [link](https://arxiv.org/pdf/1901.08810v1.pdf "Unsupervised speech representation learning")
 -->
