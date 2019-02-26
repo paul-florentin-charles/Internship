@@ -1,0 +1,6 @@
+# Required Python 3 packages to test files in <code> directory
+magenta==1.0.2
+matplotlib==3.0.3
+numpy==1.16.1
+scikit-image==0.14.2
+

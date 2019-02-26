@@ -4,6 +4,7 @@
 
 > Resources inside `code environment` are linked to `WaveNet`
 
+> Resources in **bold** are linked to _GAN_
 
 ## Articles
 
@@ -13,7 +14,7 @@
 
 - Audio Style Transfer : [link](https://www.researchgate.net/publication/320754682 "Audio Style Transfer")
 - _Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders_ : [link](https://arxiv.org/abs/1704.01279 "Neural Audio Synthesis")
-- Adversarial Audio Synthesis : [link](https://arxiv.org/abs/1802.04208 "Adversarial Audio Synthesis")
+- **Adversarial Audio Synthesis** : [link](https://arxiv.org/abs/1802.04208 "Adversarial Audio Synthesis")
 - A Universal Music Translation Network : [link](https://arxiv.org/abs/1805.07848 "Music Translation Network")
 - `WaveNet: A Generative Model for Raw Audio` : [link](https://arxiv.org/abs/1609.03499 "WaveNet")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://arxiv.org/abs/1811.00223 "Neural Music Synthesis")
@@ -26,6 +27,7 @@
 - Calculation of a constant Q spectral transform : [link](https://asa.scitation.org/doi/10.1121/1.400476 "CQT")
 - Signal estimation from modified short-time Fourier transform : [link](https://ieeexplore.ieee.org/document/1164317 "Modified short-time Fourier transform")
 - Improved Techniques for Training GANs : [link](https://arxiv.org/abs/1606.03498 "Techniques for GANs")
+- Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift : [link](https://arxiv.org/abs/1502.03167v3 "Batch Normalization")
 <!--
 - Unsupervised speech representation learning using WaveNet autoencoders : [link](https://arxiv.org/pdf/1901.08810v1.pdf "Unsupervised speech representation learning")
 -->
@@ -56,7 +58,7 @@
 ## Works
 
 - _NSynth_ : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/nsynth "NSynth")
-- WaveGAN : [link](https://github.com/chrisdonahue/wavegan "WaveGan")
+- **WaveGAN** : [link](https://github.com/chrisdonahue/wavegan "WaveGan")
 - `WaveNet TensorFlow` : [link](https://github.com/ibab/tensorflow-wavenet "WaveNet")
 - SampleRNN : [link](https://github.com/soroushmehr/sampleRNN_ICLR2017 "SampleRNN")
 - Tacotron : [link](https://github.com/keithito/tacotron "Tacotron")
@@ -68,6 +70,7 @@
 - _The NSynth Dataset_ : [link](https://magenta.tensorflow.org/datasets/nsynth "NSynth")
 - Classical Piano MIDI: [link](http://www.piano-midi.de/ "Piano MIDI")
 - MagnaTagATune Dataset : [link](http://mirg.city.ac.uk/codeapps/the-magnatagatune-dataset "MagnaTagATune")
+- Minst-dataset : [link](https://github.com/ejhumphrey/minst-dataset/ "minst")
 
 
 ## Miscellaneous
@@ -81,3 +84,6 @@
 - A Recurrent Neural Network Music Generation Tutorial : [link](https://magenta.tensorflow.org/2016/06/10/recurrent-neural-network-generation-tutorial "RNN")
 - _Generate your own sounds with NSynth_ : [link](https://magenta.tensorflow.org/nsynth-fastgen "NSynth")
 - Audio pitch-shifting & the Constant-Q transform : [link](https://www.edn.com/electronics-blogs/sound-bites/4421452/Audio-pitch-shifting---the-constant-Q-transform "Constant-Q transform")
+- What are the advantages of using Leaky ReLU over normal ReLU in deep learning ? : [link](https://www.quora.com/What-are-the-advantages-of-using-Leaky-Rectified-Linear-Units-Leaky-ReLU-over-normal-ReLU-in-deep-learning "ReLU vs Leaky-ReLU")
+- The cross-entropy function in neural networks : [link](https://datascience.stackexchange.com/questions/9302/the-cross-entropy-error-function-in-neural-networks "Cross-entropy")
+- Exploring Neural Audio Synthesis with NSynth : [link](https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/NSynth.ipynb "NSynth jupyter notebook")
