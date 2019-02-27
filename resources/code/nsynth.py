@@ -2,7 +2,7 @@
 Adapted from : https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/NSynth.ipynb (Part 1 & 2)
 """
 
-import os, sys
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
 from magenta.models.nsynth import utils
@@ -59,7 +59,7 @@ def timestretch(encoding, factor):
 ## Variables ##
 
 sample_rate = 16000 # try with 44100
-sample_length = 40000
+sample_length = 80000
 
 _file, _model = sys.argv[1], sys.argv[2]
 
@@ -103,8 +103,8 @@ if plot:
     axs[2].set_title('Encoding (Slower)')
 
 # Slower and faster decoding
-fastgen.synthesize(encoding_slower, save_paths=["decoded_slower_" + _file], samples_per_save=sample_length)
-fastgen.synthesize(encoding_faster, save_paths=["decoded_faster_" + _file], samples_per_save=sample_length)
+fastgen.synthesize(encoding_slower, save_paths=[without_extension(_file) + "_decoded_slower." + get_extension(_file)], samples_per_save=sample_length)
+fastgen.synthesize(encoding_faster, save_paths=[without_extension(_file) + "_decoded_faster." + get_extension(_file)], samples_per_save=sample_length)
 
 if debug:
     print("\n*****\nCongratulations, you've made it through part two\n*****\n")
