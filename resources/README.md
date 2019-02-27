@@ -89,3 +89,4 @@
 - The cross-entropy function in neural networks : [link](https://datascience.stackexchange.com/questions/9302/the-cross-entropy-error-function-in-neural-networks "Cross-entropy")
 - Exploring Neural Audio Synthesis with NSynth : [link](https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/NSynth.ipynb "NSynth jupyter notebook")
 - Making a Neural Synthesizer Instrument : [link](https://magenta.tensorflow.org/nsynth-instrument "NSynth instrument")
+- Music with Artificial Intelligence | Andrew Huang : [link](https://www.youtube.com/watch?v=AaALLWQmCdI "Music with AI")
