@@ -4,7 +4,8 @@
 
 > Resources inside `code environment` are linked to `WaveNet`
 
-> Resources in **bold** are linked to _GAN_
+> Resources in **bold** are linked to _WaveGAN_
+
 
 ## Articles
 
@@ -87,3 +88,4 @@
 - What are the advantages of using Leaky ReLU over normal ReLU in deep learning ? : [link](https://www.quora.com/What-are-the-advantages-of-using-Leaky-Rectified-Linear-Units-Leaky-ReLU-over-normal-ReLU-in-deep-learning "ReLU vs Leaky-ReLU")
 - The cross-entropy function in neural networks : [link](https://datascience.stackexchange.com/questions/9302/the-cross-entropy-error-function-in-neural-networks "Cross-entropy")
 - Exploring Neural Audio Synthesis with NSynth : [link](https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/NSynth.ipynb "NSynth jupyter notebook")
+- Making a Neural Synthesizer Instrument : [link](https://magenta.tensorflow.org/nsynth-instrument "NSynth instrument")

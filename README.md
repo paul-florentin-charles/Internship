@@ -2,4 +2,4 @@
 
 Right now focusing on *Neural Networks* approaches...
 
-Check *resources* repository and its **README** for some content.
+Check *resources* directory and its **README** for some content.
