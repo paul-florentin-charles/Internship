@@ -9,21 +9,17 @@ import matplotlib.pyplot as plt
 from magenta.models.nsynth import utils
 from magenta.models.nsynth.wavenet import fastgen
 
+from config import *
+from utils import without_extension
+
 def usage():
-    print("Usage: python3 nsynth.py <path_to_audio_file> <path_to_audio_file> <path_to_model>")
+    print("Usage: python3 nsynth.py <path_to_first_audio_file> <path_to_second_audio_file> <path_to_model>")
 
 if len(sys.argv) < 4:
     usage()
     raise SystemExit
 
 ## Utils ##
-
-def without_extension(_file):
-    '''
-    Takes a string <_file>
-    Returns string stripped of the characters after its last point (included), if it has any. Otherwise, returns the same string
-    '''
-    return _file[:_file.rfind('.')]
 
 def load_encoding(_file, sample_length=None, sample_rate=16000, ckpt='model.ckpt-200000'):
     '''
@@ -47,13 +43,10 @@ def crossfade(encoding1, encoding2):
 
 ## Variables ##
 
-sample_rate = 16000 # try with 44100
-sample_length = 80000
+sample_rate = SAMPLE_RATE
+sample_length = SAMPLE_LTH
 
 _file_1, _file_2, _model = sys.argv[1], sys.argv[2], sys.argv[3]
-
-plot = False
-debug = True
 
 ## Process ##
 
@@ -68,7 +61,7 @@ print("2. (batch_size, time_steps, dimensions) :", encoding_2.shape)
 # mixing encodings #
 encoding_mix = (encoding_1 + encoding_2) / 2.0
 
-if plot:
+if PLOT:
     fig, axs = plt.subplots(3, 1, figsize=(10, 7))
     axs[0].plot(encoding_1[0]);
     axs[0].set_title('Encoding 1')
@@ -80,7 +73,10 @@ if plot:
 # Decoding mixed encoding
 fastgen.synthesize(encoding_mix, save_paths=['decoded_mix.wav'])
 
-if plot:
+if DEBUG:
+    print("Generation for mixed encoding achieved !")
+
+if PLOT:
     fig, axs = plt.subplots(3, 1, figsize=(10, 7))
     axs[0].plot(encoding_1[0]);
     axs[0].set_title('Original Encoding')
@@ -89,7 +85,7 @@ if plot:
     axs[2].plot(fade(encoding_1, 'out')[0]);
     axs[2].set_title('Fade Out')
 
-if plot:
+if PLOT:
     fig, axs = plt.subplots(3, 1, figsize=(10, 7))
     axs[0].plot(encoding_1[0]);
     axs[0].set_title('Encoding 1')
@@ -101,5 +97,5 @@ if plot:
 # Decoding crossfaded encoding
 fastgen.synthesize(crossfade(enc1, enc2), save_paths=['decoded_crossfade.wav'])
 
-if debug:
-    print("\n*****\nCongratulations, you've made it through part three\n*****\n")
+if DEBUG:
+    print("Generation for crossfaded encoding achieved !")

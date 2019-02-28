@@ -1,3 +1,11 @@
+# Requirements
+
+They are listed in *requirements.txt* file.
+
+Just type `pip3 install -r requirements` to get those.
+
+If you wish to use a GPU, uncomment **magenta-gpu** and **tensorflow-gpu**, and comment **magenta** and **tensorflow**.
+
 # Instructions
 
 Put your audio files in *audio* directory (not necessary, it is 

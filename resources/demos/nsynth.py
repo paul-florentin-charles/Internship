@@ -9,6 +9,9 @@ from magenta.models.nsynth import utils
 from magenta.models.nsynth.wavenet import fastgen
 from skimage.transform import resize
 
+from config import *
+from utils import get_extension, without_extension
+
 def usage():
     print("Usage: python3 nsynth.py <path_to_audio_file> <path_to_model>")
 
@@ -17,20 +20,6 @@ if len(sys.argv) < 3:
     raise SystemExit
 
 ## Utils ##
-
-def get_extension(_file):
-    '''
-    Takes a string <_file>
-    Returns string stripped of the characters before its last point (included), if it has any. Otherwise, returns the same string
-    '''
-    return _file[_file.rfind('.') + 1:]
-
-def without_extension(_file):
-    '''
-    Takes a string <_file>
-    Returns string stripped of the characters after its last point (included), if it has any. Otherwise, returns the same string
-    '''
-    return _file[:_file.rfind('.')]
 
 def load_encoding(_file, sample_length=None, sample_rate=16000, ckpt='model.ckpt-200000'):
     '''
@@ -58,13 +47,10 @@ def timestretch(encoding, factor):
 
 ## Variables ##
 
-sample_rate = 16000 # try with 44100
-sample_length = 80000
+sample_rate = SAMPLE_RATE
+sample_length = SAMPLE_LTH
 
 _file, _model = sys.argv[1], sys.argv[2]
-
-plot = False
-debug = True
 
 ## Process ##
 
@@ -74,7 +60,7 @@ np.save(without_extension(_file) + '.npy', encoding)
 print("(batch_size, time_steps, dimensions) :", encoding.shape)
 
 # plotting #
-if plot:
+if PLOT:
     fig, axs = plt.subplots(2, 1, figsize=(10, 5))
     axs[0].plot(audio);
     axs[0].set_title('Audio Signal')
@@ -85,15 +71,14 @@ if plot:
 '''Synthesizes audio from the encoding and saves it'''
 fastgen.synthesize(encoding, save_paths=[without_extension(_file) + "_decoded." + get_extension(_file)], samples_per_save=sample_length)
 
-if debug:
-    print("\n*****\nCongratulations, you've made it through part one\n*****\n")
-
+if DEBUG:
+    print("Generation for normal encoding achieved !")
 
 # slower and faster encoding #
 encoding_slower = timestretch(encoding, 1.5)
 encoding_faster = timestretch(encoding, 0.5)
 
-if plot:
+if PLOT:
     fig, axs = plt.subplots(3, 1, figsize=(10, 7), sharex=True, sharey=True)
     axs[0].plot(encoding[0]);
     axs[0].set_title('Encoding (Normal Speed)')
@@ -104,7 +89,13 @@ if plot:
 
 # Slower and faster decoding
 fastgen.synthesize(encoding_slower, save_paths=[without_extension(_file) + "_decoded_slower." + get_extension(_file)], samples_per_save=sample_length)
+
+if DEBUG:
+    print("Generation for slow encoding achieved !")
+
 fastgen.synthesize(encoding_faster, save_paths=[without_extension(_file) + "_decoded_faster." + get_extension(_file)], samples_per_save=sample_length)
 
-if debug:
-    print("\n*****\nCongratulations, you've made it through part two\n*****\n")
+if DEBUG:
+    print("Generation for fast encoding achieved !")
+
+  
