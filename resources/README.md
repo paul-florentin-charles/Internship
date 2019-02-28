@@ -22,6 +22,7 @@
 - Parallel WaveNet: Fast High-Fidelity Speech Synthesis : [link](https://arxiv.org/abs/1711.10433 "Parallel WaveNet")
 - SampleRNN: An Unconditional End-to-End Neural Audio Generation Model : [link](https://arxiv.org/abs/1612.07837 "SampleRNN")
 - Tacotron: Towards End-to-End Speech Synthesis : [link](https://arxiv.org/abs/1703.10135 "Tacotron")
+- GANSynth: Adversarial Neural Audio Synthsis : [link](https://openreview.net/forum?id=H1xQVn09FX "GANSynth")
 
 #### Tool-related
 
@@ -29,6 +30,7 @@
 - Signal estimation from modified short-time Fourier transform : [link](https://ieeexplore.ieee.org/document/1164317 "Modified short-time Fourier transform")
 - Improved Techniques for Training GANs : [link](https://arxiv.org/abs/1606.03498 "Techniques for GANs")
 - Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift : [link](https://arxiv.org/abs/1502.03167v3 "Batch Normalization")
+- Sampling Generative Networks : [link](https://arxiv.org/abs/1609.04468 "Sampling Generative Networks")
 <!--
 - Unsupervised speech representation learning using WaveNet autoencoders : [link](https://arxiv.org/pdf/1901.08810v1.pdf "Unsupervised speech representation learning")
 -->
@@ -41,7 +43,7 @@
 - High-fidelity speech synthesis with WaveNet : [link](https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/ "High-fidelity speech synthesis")
 - An Intuitive Explanation of Convolutional Neural Networks : [link](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/ "Convolutional Neural Network")
 - A Quick Introduction to Neural Networks : [link](https://ujjwalkarn.me/2016/08/09/quick-intro-neural-networks/ "Neural Network")
-
+- GANSynth: Making music with GANs : [link](https://magenta.tensorflow.org/gansynth "GANSynth")
 
 ## Definitions
 
@@ -54,7 +56,8 @@
 - What is underfitting and overfitting in machine learning and how to deal with it : [link](https://medium.com/greyatom/what-is-underfitting-and-overfitting-in-machine-learning-and-how-to-deal-with-it-6803a989c76 "Underfitting/Overfitting")
 - Mean squared error : [link](https://en.wikipedia.org/wiki/Mean_squared_error "MSE")
 - What is batch size in neural network ? : [link](https://stats.stackexchange.com/questions/153531/what-is-batch-size-in-neural-network "Batch size")
-
+- What is One Hot Encoding ? : [link](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f "One hot encoding")
+- What do channels refer to in a convolutional neural network ? : [link](https://www.quora.com/What-do-channels-refer-to-in-a-convolutional-neural-network "Channels in NN")
 
 ## Works
 
@@ -63,7 +66,7 @@
 - `WaveNet TensorFlow` : [link](https://github.com/ibab/tensorflow-wavenet "WaveNet")
 - SampleRNN : [link](https://github.com/soroushmehr/sampleRNN_ICLR2017 "SampleRNN")
 - Tacotron : [link](https://github.com/keithito/tacotron "Tacotron")
-
+- GANSynth : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/gansynth "GANSynth")
 
 ## Datasets
 

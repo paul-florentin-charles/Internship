@@ -55,7 +55,7 @@ Two different activation functions are combined after convolution is applied to 
 They speed up the process. 
 Below is a figure extracted from the paper, that depicts WaveNet's architecture.
 
-![WaveNet Architecture](https://gitgud.io/polochinoc/internship/raw/master/resources/notes/images/wavenet.png "WaveNet Architecture")
+![WaveNet Architecture](https://gitgud.io/polochinoc/internship/raw/master/resources/notes/images/wavenet.png)
 
 #### Some comments
 
