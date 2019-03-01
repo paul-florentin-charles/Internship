@@ -103,10 +103,12 @@
 - Exploring Neural Audio Synthesis with NSynth : [link](https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/NSynth.ipynb "NSynth jupyter notebook")
 - _Generate your own sounds with NSynth_ : [link](https://magenta.tensorflow.org/nsynth-fastgen "NSynth")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://neural-music-synthesis.github.io/ "Neural Music Synthesis")
+- NSynth: Sound maker : [link](https://experiments.withgoogle.com/ai/sound-maker/view/ "NSynth mix")
 
 ### Videos
 
 - Music with Artificial Intelligence | Andrew Huang : [link](https://www.youtube.com/watch?v=AaALLWQmCdI "Music with AI")
+- Project Magenta: Music and Art with Machine Learning : [link](https://www.youtube.com/watch?v=3MmuWFkgYUY "Project Magenta")
 
 ### Theory
 
