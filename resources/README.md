@@ -58,6 +58,8 @@
 - What is batch size in neural network ? : [link](https://stats.stackexchange.com/questions/153531/what-is-batch-size-in-neural-network "Batch size")
 - What is One Hot Encoding ? : [link](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f "One hot encoding")
 - What do channels refer to in a convolutional neural network ? : [link](https://www.quora.com/What-do-channels-refer-to-in-a-convolutional-neural-network "Channels in NN")
+- What is a frequency bin ? : [link](https://dsp.stackexchange.com/questions/26927/what-is-a-frequency-bin "Frequency bin")
+
 
 ## Works
 

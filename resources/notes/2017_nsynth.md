@@ -60,6 +60,47 @@ Phase is also a used feature. Firstly independently estimated using instantaneou
 Used heuristic is a weighted MSE, that gives more importance to lower frequencies for learning.
 It gives better phase restitution for the fundamentals.
 
-Underneath is a figure showcasing the baseliner.
+Underneath is a figure showcasing the baseline.
 
 ![Baseline Autoencoder](https://gitgud.io/polochinoc/internship/raw/master/resources/notes/images/baseline_autoencoder.png)
+
+### Training
+
+**Stochastic gradient descent** with and **Adam optimizer**
+Learning rate is constant for baseline but decreasing for WaveNet autoencoder.
+
+
+## NSynth Dataset
+
+Consists solely of musical notes (~300k), with the full range of pitches in a piano (88), and with 5 different values of velocity.
+Each note is held for the first 3 seconds, and released for 1 second.
+Furthermore, every note is annotated accorting to 3 criteria :
+* Source : acoustic, electronic or synthetic
+* Family : bass, brass, flute, guitar, keyboad, mallet, organ, reed, string, synth lead or vocal
+* Qualities : bright, dark, distortion, fast decay, lon release, multiphonic, NL envelope, percussive, reverb and tempo-synced
+
+
+## Evaluation
+
+3 tasks :
+- note reconstruction
+- instrument interpolation
+- pitch interpolation
+
+Used representation : Constant Q Transform.
+--> Insensitive to shift in the fundamental frequency.
+--> Displays phase information
+It remains a visual representation, and two lookalike spectrums don't necessarily mean the sounds are similar.
+But it has more information, especially about the phase.
+
+Intensity of colours depends on the log magnitude, while colour itself depends on the phase derivative **(instantaneous frequency)**.
+If a harmony keeps a consistent frequency, the dephasing between harmonics will remain constant, therefore a null derivative.
+In the graphic, it is translated by a continuous horizontal line of constant colour.
+
+*Rainbowgram*
+
+$\Delta \phi = (f_{bin} - f_{harm}) \frac{hopsize}{samplerate}$
+
+This constant phase shift is at the origin of the phase modulation that produces "rainbows".
+$f\_{bin}$ is the closest discretized frequency, and $f\_{harm}$ is the actual frequency.
+ 

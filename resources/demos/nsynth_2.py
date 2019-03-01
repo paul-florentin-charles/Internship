@@ -95,7 +95,7 @@ if PLOT:
     axs[2].set_title('Crossfade')
 
 # Decoding crossfaded encoding
-fastgen.synthesize(crossfade(enc1, enc2), save_paths=['decoded_crossfade.wav'])
+fastgen.synthesize(crossfade(encoding_1, encoding_2), save_paths=['decoded_crossfade.wav'])
 
 if DEBUG:
     print("Generation for crossfaded encoding achieved !")

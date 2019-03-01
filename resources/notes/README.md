@@ -8,6 +8,9 @@
 | *WaveNet: A Generative Model for Raw Audio* | `2016_wavenet.md` |
 | *Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders* | `2017_nsynth.md` |
 
+For sounds produced with these NN, I invite you to look up for these papers online, and listen to the sounds there.
+
+I chose not to store them in my repository.
 
 ## Help
 
