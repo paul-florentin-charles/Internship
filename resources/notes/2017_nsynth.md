@@ -3,18 +3,15 @@
 
 ## Introduction
 
-Audio synthesis based on WaveNet, adapted to be an autoencoder.
-
+Audio synthesis based on WaveNet, adapted to be an autoencoder. <br>
 Therefore it needn't any external conditioning since it is biased using a temporal encoder.
 
 
-For the purpose of the training, a big dataset has been set up : *NSynth*.
-
+For the purpose of the training, a big dataset has been set up : *NSynth*. <br>
 It consists of ~300k 4-second notes, sampled at 16 kHz from 1k instruments.
 
 
-WaveNet works for short signal (~0.5s), and relies on conditioning for longer signals.
-
+WaveNet works for short signal (~0.5s), and relies on conditioning for longer signals. <br>
 Here, we have a WaveNet-like encoder that produces **embeddings** applied as biases on a WaveNet decoder.
 
 
