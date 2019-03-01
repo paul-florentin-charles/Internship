@@ -2,9 +2,9 @@
 
 > Resources in _italic_ are linked to _NSynth_
 
-> Resources inside `code environment` are linked to `WaveNet`
+> Resources highlighted in `red` are linked to `WaveNet`
 
-> Resources in **bold** are linked to _WaveGAN_
+> Resources in **bold** are linked to __WaveGAN__
 
 
 ## Articles
