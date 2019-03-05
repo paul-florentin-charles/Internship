@@ -69,7 +69,7 @@ Using this, **phase shuffle** operation is set up with an hyperparameter $n$. <b
 It merely consists of a random shift of value $-n \leq i \leq n$ for each layer.
 
 This increases the discriminator accuracy so that it requires phase consistency. <br>
-Moreover, the gap due to the shift is filled by reflection ; it is depicted in the figure below.
+Moreover, the gap due to the shift is filled by reflection ; it is depicted in the figure below, for $n = 1$.
 
 ![Phase Shuffle](https://gitgud.io/polochinoc/internship/raw/master/resources/notes/images/phase_shuffle.png)
 
