@@ -90,9 +90,16 @@ Procedure to get back to audio
 - Invert all previous steps
 - Apply Griffin-Lim algorithm
 
+
 ## Evaluation methodology
 
 ### Inception score
+
+Usage of a pre-trained classifier, measuring diversity between generated samples and semantic. <br>
+Is predicts pre-defined labels amongst $n$ different ones.
+
+If $x$ and $y$ are labels, the inception score is defined by $exp(\mathbb{E}_x D_{KL}(P(y|x) || P(y)))$. <br>
+It is maximized when the classifier is thoroughly confident and accurate about every prediction.
 
 ### Nearest neighbor
 

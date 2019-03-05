@@ -69,11 +69,14 @@
 - Causal convolutions : [link](https://www.quora.com/What-are-causal-convolutions "Causal Convolutions")
 - Channels in CNN : [link](https://www.quora.com/What-do-channels-refer-to-in-a-convolutional-neural-network "Channels in NN")
 - Convolutional neural network : [link](https://en.wikipedia.org/wiki/Convolutional_neural_network "CNN")
-- Frequency bin : [link](https://dsp.stackexchange.com/questions/26927/what-is-a-frequency-bin "Frequency bin")
 - Mean squared error : [link](https://en.wikipedia.org/wiki/Mean_squared_error "MSE")
 - One-Hot encoding : [link](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f "One hot encoding")
 - Receptive field in CNN : [link](https://www.quora.com/What-is-a-receptive-field-in-a-convolutional-neural-network "Receptive Field")
 - Underfitting/Overfitting : [link](https://medium.com/greyatom/what-is-underfitting-and-overfitting-in-machine-learning-and-how-to-deal-with-it-6803a989c76 "Underfitting/Overfitting")
+
+### About sound
+- Frequency bin : [link](https://dsp.stackexchange.com/questions/26927/what-is-a-frequency-bin "Frequency bin")
+- Mel Frequency Cepstral Coefficient (MFCC) tutorial : [link](http://practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/ "MFCC")
 
 ### About evaluation methods
 
