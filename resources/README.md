@@ -34,10 +34,13 @@
 
 - Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift : [link](https://arxiv.org/abs/1502.03167v3 "Batch Normalization")
 - Calculation of a constant Q spectral transform : [link](https://asa.scitation.org/doi/10.1121/1.400476 "CQT")
+- Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks : [link](https://arxiv.org/abs/1511.06434 "DCGAN")
+- Generative Adversarial Networks : [link](https://arxiv.org/abs/1406.2661 "GAN")
 - Sampling Generative Networks : [link](https://arxiv.org/abs/1609.04468 "Sampling Generative Networks")
 - Signal estimation from modified short-time Fourier transform : [link](https://ieeexplore.ieee.org/document/1164317 "Modified short-time Fourier transform")
 - Improved Techniques for Training GANs : [link](https://arxiv.org/abs/1606.03498 "Techniques for GANs")
-
+- Wasserstein GAN : [link](https://arxiv.org/abs/1701.07875 "Wasserstein GAN")
+	
 ### Vulgarization
 
 #### Synthesis-related
@@ -75,6 +78,7 @@
 ### About evaluation methods
 
 - Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
+- Inception Score — evaluating the realism of your GAN : [link](https://sudomake.ai/inception-score-explained/ "Inception Score")
 
 
 ## Repositories
@@ -104,6 +108,7 @@
 - _Generate your own sounds with NSynth_ : [link](https://magenta.tensorflow.org/nsynth-fastgen "NSynth")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://neural-music-synthesis.github.io/ "Neural Music Synthesis")
 - NSynth: Sound maker : [link](https://experiments.withgoogle.com/ai/sound-maker/view/ "NSynth mix")
+- WaveGan sound examples : [link](https://chrisdonahue.com/wavegan_examples/ "WaveGan")
 
 ### Videos
 

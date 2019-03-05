@@ -3,3 +3,4 @@ IDEA.md
 **~
 /resources/demos/audio/**
 !.gitkeep
+/src/nsynth-test
