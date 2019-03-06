@@ -40,6 +40,7 @@
 - Signal estimation from modified short-time Fourier transform : [link](https://ieeexplore.ieee.org/document/1164317 "Modified short-time Fourier transform")
 - Improved Techniques for Training GANs : [link](https://arxiv.org/abs/1606.03498 "Techniques for GANs")
 - Wasserstein GAN : [link](https://arxiv.org/abs/1701.07875 "Wasserstein GAN")
+- FiLM: Visual Reasoning with a General Conditioning Layer : [link](https://arxiv.org/abs/1709.07871 "FiLM")
 	
 ### Vulgarization
 
@@ -49,6 +50,7 @@
 - Music Transformer: Generating Music with Long-Term Structure : [link](https://magenta.tensorflow.org/music-transformer "Music Transformer")
 - _NSynth: Neural Audio Synthesis_ : [link](https://magenta.tensorflow.org/nsynth "NSynth")
 - Making a Neural Synthesizer Instrument : [link](https://magenta.tensorflow.org/nsynth-instrument "NSynth instrument")
+- SampleRNN : [link](http://deepsound.io/samplernn_first.html "SampleRNN")
 - High-fidelity speech synthesis with WaveNet : [link](https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/ "High-fidelity speech synthesis")
 - `WaveNet: A Generative Model for Raw Audio` : [link](https://deepmind.com/blog/wavenet-generative-model-raw-audio/ "WaveNet")
 
@@ -120,6 +122,7 @@
 
 ### Theory
 
+- Gentle Introduction to the Adam Optimization Algorithm for Deep Learning : [link](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/ "Adam Optimizer")
 - Audio pitch-shifting & the Constant-Q transform : [link](https://www.edn.com/electronics-blogs/sound-bites/4421452/Audio-pitch-shifting---the-constant-Q-transform "Constant-Q transform")
 - The cross-entropy function in neural networks : [link](https://datascience.stackexchange.com/questions/9302/the-cross-entropy-error-function-in-neural-networks "Cross-entropy")
 - What are the advantages of using Leaky ReLU over normal ReLU in deep learning ? : [link](https://www.quora.com/What-are-the-advantages-of-using-Leaky-Rectified-Linear-Units-Leaky-ReLU-over-normal-ReLU-in-deep-learning "ReLU vs Leaky-ReLU")
