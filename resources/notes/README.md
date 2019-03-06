@@ -9,6 +9,7 @@
 | *Neural Audio Synthesis of Musical Notes with WaveNet Autoencoders* | `2017_nsynth.md` |
 | *Adversarial Audio Synthesis* | `2019_wavegan.md` |
 | *Neural Music Synthesis for Flexible Timbre Control* | `2018_mel2mel.md` |
+| *GANSynth: Adversarial Neural Audio Synthesis* | `2019_gansynth.md` |
 
 For sounds produced with these NN, I invite you to look up for these papers online, and listen to the sounds there.
 

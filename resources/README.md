@@ -109,11 +109,12 @@
 
 ### Demos and audio samples
 
-- Exploring Neural Audio Synthesis with NSynth : [link](https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/NSynth.ipynb "NSynth jupyter notebook")
+- _Exploring Neural Audio Synthesis with NSynth_ : [link](https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/NSynth.ipynb "NSynth jupyter notebook")
+- "GANSynth: Audio Examples" : [link](https://storage.googleapis.com/magentadata/papers/gansynth/index.html "GANSyth Audio")
 - _Generate your own sounds with NSynth_ : [link](https://magenta.tensorflow.org/nsynth-fastgen "NSynth")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://neural-music-synthesis.github.io/ "Neural Music Synthesis")
-- NSynth: Sound maker : [link](https://experiments.withgoogle.com/ai/sound-maker/view/ "NSynth mix")
-- WaveGan sound examples : [link](https://chrisdonahue.com/wavegan_examples/ "WaveGan")
+- _NSynth: Sound maker_ : [link](https://experiments.withgoogle.com/ai/sound-maker/view/ "NSynth mix")
+- **WaveGan sound examples** : [link](https://chrisdonahue.com/wavegan_examples/ "WaveGan")
 
 ### Videos
 
