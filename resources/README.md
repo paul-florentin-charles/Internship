@@ -22,6 +22,7 @@
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://arxiv.org/abs/1811.00223 "Neural Music Synthesis")
 - Parallel WaveNet: Fast High-Fidelity Speech Synthesis : [link](https://arxiv.org/abs/1711.10433 "Parallel WaveNet")
 - SampleRNN: An Unconditional End-to-End Neural Audio Generation Model : [link](https://arxiv.org/abs/1612.07837 "SampleRNN")
+- SING: Symbol-to-Instrument Neural Generator : [link](http://papers.nips.cc/paper/8118-sing-symbol-to-instrument-neural-generator.pdf "SING")
 - Synthèse sonore/musicale basée sur l’apprentissage profond : [link](http://dept-info.labri.fr/~hanna/Stages/rapport-de-stage.pdf "Synthèse sonore par apprentissage profond")
 - Tacotron: Towards End-to-End Speech Synthesis : [link](https://arxiv.org/abs/1703.10135 "Tacotron")
 - A Universal Music Translation Network : [link](https://arxiv.org/abs/1805.07848 "Music Translation Network")
@@ -99,7 +100,8 @@
 
 ## Datasets
 
-- Classical Piano MIDI: [link](http://www.piano-midi.de/ "Piano MIDI")
+- Classical Piano MIDI : [link](http://www.piano-midi.de/ "Piano MIDI")
+- J.S. Bach MIDI files : [link](http://www.jsbach.net/midi/index.html "Bach MIDI")
 - The MAESTRO Dataset : [link](https://magenta.tensorflow.org/datasets/maestro "MAESTRO")
 - MagnaTagATune Dataset : [link](http://mirg.city.ac.uk/codeapps/the-magnatagatune-dataset "MagnaTagATune")
 - Minst-dataset : [link](https://github.com/ejhumphrey/minst-dataset/ "minst")
@@ -115,6 +117,7 @@
 - _Generate your own sounds with NSynth_ : [link](https://magenta.tensorflow.org/nsynth-fastgen "NSynth")
 - Neural Music Synthesis for Flexible Timbre Control : [link](https://neural-music-synthesis.github.io/ "Neural Music Synthesis")
 - _NSynth: Sound maker_ : [link](https://experiments.withgoogle.com/ai/sound-maker/view/ "NSynth mix")
+- TiFGAN : [link](https://tifgan.github.io/ "TiFGAN")
 - **WaveGan sound examples** : [link](https://chrisdonahue.com/wavegan_examples/ "WaveGan")
 
 ### Videos

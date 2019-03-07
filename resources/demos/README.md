@@ -8,8 +8,7 @@ If you wish to use a GPU, uncomment **magenta-gpu** and **tensorflow-gpu**, and 
 
 # Instructions
 
-Put your audio files in *audio* directory (not necessary, it is 
-merely cleaner).
+Put your audio files in *audio* directory (not necessary, it is merely cleaner).
 
 Place your model files next to the python files ; you can grab one that is pre-trained at [wavenet-cpkt](http://download.magenta.tensorflow.org/models/nsynth/wavenet-ckpt.tar).
 
