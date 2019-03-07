@@ -93,6 +93,8 @@ Procedure to get back to audio
 
 ## Evaluation methodology
 
+TODO : Complete this part
+
 ### Inception score
 
 Usage of a pre-trained classifier, measuring diversity between generated samples and semantic. <br>

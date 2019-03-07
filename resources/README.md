@@ -77,6 +77,7 @@
 - Underfitting/Overfitting : [link](https://medium.com/greyatom/what-is-underfitting-and-overfitting-in-machine-learning-and-how-to-deal-with-it-6803a989c76 "Underfitting/Overfitting")
 
 ### About sound
+- Filter Bank : [link](https://ccrma.stanford.edu/realsimple/aud_fb/What_Filter_Bank.html "Filter Bank")
 - Frequency bin : [link](https://dsp.stackexchange.com/questions/26927/what-is-a-frequency-bin "Frequency bin")
 - Mel Frequency Cepstral Coefficient (MFCC) tutorial : [link](http://practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/ "MFCC")
 
