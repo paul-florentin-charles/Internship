@@ -28,5 +28,4 @@ your model.
 ## Datasets
 
 - NSynth : [test](http://download.magenta.tensorflow.org/datasets/nsynth/nsynth-test.jsonwav.tar.gz), [valid](http://download.magenta.tensorflow.org/datasets/nsynth/nsynth-valid.jsonwav.tar.gz), [train](http://download.magenta.tensorflow.org/datasets/nsynth/nsynth-train.jsonwav.tar.gz)
-
 - MIDI : [J.S. Bach](http://www.jsbach.net/midi/index.html), [Classical Piano](www.piano-midi.de)

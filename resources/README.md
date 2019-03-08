@@ -39,6 +39,7 @@
 - Generative Adversarial Networks : [link](https://arxiv.org/abs/1406.2661 "GAN")
 - Sampling Generative Networks : [link](https://arxiv.org/abs/1609.04468 "Sampling Generative Networks")
 - Signal estimation from modified short-time Fourier transform : [link](https://ieeexplore.ieee.org/document/1164317 "Modified short-time Fourier transform")
+- A Style-Based Generator Architecture for Generative Adversarial Networks : [link](https://arxiv.org/abs/1812.04948 "Style-based architecture for Generator in GANs")
 - Improved Techniques for Training GANs : [link](https://arxiv.org/abs/1606.03498 "Techniques for GANs")
 - Wasserstein GAN : [link](https://arxiv.org/abs/1701.07875 "Wasserstein GAN")
 - FiLM: Visual Reasoning with a General Conditioning Layer : [link](https://arxiv.org/abs/1709.07871 "FiLM")
@@ -112,6 +113,7 @@
 
 ### Demos and audio samples
 
+- DCGAN Jupyter Notebook : [link](https://github.com/llSourcell/Generative_Adversarial_networks_LIVE/blob/master/EZGAN.ipynb "DCGAN")
 - _Exploring Neural Audio Synthesis with NSynth_ : [link](https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/NSynth.ipynb "NSynth jupyter notebook")
 - "GANSynth: Audio Examples" : [link](https://storage.googleapis.com/magentadata/papers/gansynth/index.html "GANSyth Audio")
 - _Generate your own sounds with NSynth_ : [link](https://magenta.tensorflow.org/nsynth-fastgen "NSynth")
@@ -122,6 +124,8 @@
 
 ### Videos
 
+- Coding a Deep Convolutional Generative Adversarial Network (DCGAN) from scratch (Python Tensorflow) : [link](https://www.youtube.com/watch?v=thr7KldvpPw "DCGAN Implementation")
+- Introduction to GANs, NIPS 2016 | Ian Goodfellow, OpenAI : [link](https://www.youtube.com/watch?v=9JpdAg6uMXs "Introduction to GANs")
 - Music with Artificial Intelligence | Andrew Huang : [link](https://www.youtube.com/watch?v=AaALLWQmCdI "Music with AI")
 - Project Magenta: Music and Art with Machine Learning : [link](https://www.youtube.com/watch?v=3MmuWFkgYUY "Project Magenta")
 
@@ -132,9 +136,10 @@
 - The cross-entropy function in neural networks : [link](https://datascience.stackexchange.com/questions/9302/the-cross-entropy-error-function-in-neural-networks "Cross-entropy")
 - What are the advantages of using Leaky ReLU over normal ReLU in deep learning ? : [link](https://www.quora.com/What-are-the-advantages-of-using-Leaky-Rectified-Linear-Units-Leaky-ReLU-over-normal-ReLU-in-deep-learning "ReLU vs Leaky-ReLU")
 - Principles of training multi-layer neural network using backpropagation [link](http://home.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html "Backpropagation")
-- Role of Bias in Neural Networks : [link](https://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks "Bias")
+- Role of Bias in Neural Networks : [link]w(https://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks "Bias")
 
 ### Blog posts
 
+- Deep Convolutional GAN (DCGAN) : Architecture and choice of the good set of hyper-parameters : [link](https://julianzaidi.wordpress.com/2017/04/24/deep-convolution-gan-dcgan-architecture-and-training/ "DCGAN set-up")
 - Google voice search: faster and more accurate : [link](https://ai.googleblog.com/2015/09/google-voice-search-faster-and-more.html "Google Voice Search")
 - A Recurrent Neural Network Music Generation Tutorial : [link](https://magenta.tensorflow.org/2016/06/10/recurrent-neural-network-generation-tutorial "RNN")

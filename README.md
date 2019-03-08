@@ -4,7 +4,7 @@ Right now focusing on *Neural Networks* approaches...
 
 Check *resources* directory and its **README** for some content.
 
-`Warning:` *src* folder is highly experimental :radioactive:
+`Warning:` *experimentations* folder is highly experimental :radioactive:
 
 To list **TODOS** in repository, and for your personal usage :gift:
 
