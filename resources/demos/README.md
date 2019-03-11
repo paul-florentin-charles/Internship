@@ -31,7 +31,8 @@ python3 nsynth_2.py <path/to/first/audio/file> <path/to/second/audio/file> <mode
 - Download a pre-trained model (`curl -O <url>` or `wget <url>`)
 - Unzip it
 - Create an empty output directory
-- Optional : Download a midi file
+- Download default midi file `curl -O http://www.jsbach.net/midi/bwv_1060.mid`
+- Optional : Download another midi file
 
 ```bash
 python3 gansynth.py <path/to/model/dir> <path/to/output/dir> <path/to/optional/midi/file>
