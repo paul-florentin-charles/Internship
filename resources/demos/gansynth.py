@@ -128,7 +128,7 @@ These cells take the MIDI for a full song and interpolate between several random
 """
 
 midi_path = DEFAULT_MIDI
-if len(argv) >  3:
+if len(sys.argv) >  3:
   midi_path = sys.argv[3]
 
 ns, notes = load_midi(midi_path)

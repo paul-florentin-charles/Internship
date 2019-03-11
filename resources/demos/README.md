@@ -8,17 +8,34 @@ If you wish to use a GPU, uncomment **magenta-gpu** and **tensorflow-gpu**, and 
 
 # Instructions
 
-Put your audio files in *audio* directory (not necessary, it is merely cleaner).
+## NSynth
 
-Place your model files next to the python files.
+- Download a pre-trained model (`curl -O <url>` or `wget <url>`)
+- Unzip it
+- Place your model files next to the python files.
 
 There should be 3 model files for each model :
 * <model_name>.data
 * <model_name>.index
 * <model_name>.meta
 
-Just type <model_name> whenever using python scripts to designate 
-your model.
+- Put your audio files in *audio* directory (not necessary, it is merely cleaner)
+
+```bash
+python3 nsynth.py <path/to/audio/file> <model_name>
+python3 nsynth_2.py <path/to/first/audio/file> <path/to/second/audio/file> <model_name>
+```
+
+## GANSynth
+
+- Download a pre-trained model (`curl -O <url>` or `wget <url>`)
+- Unzip it
+- Create an empty output directory
+- Optional : Download a midi file
+
+```bash
+python3 gansynth.py <path/to/model/dir> <path/to/output/dir> <path/to/optional/midi/file>
+```
 
 ## Pre-trained models
 

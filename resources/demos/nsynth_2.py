@@ -16,7 +16,7 @@ from config import *
 from utils import without_extension
 
 def usage():
-    print("Usage: python3 nsynth.py <path_to_first_audio_file> <path_to_second_audio_file> <path_to_model>")
+    print("Usage: python3 nsynth_2.py <path_to_first_audio_file> <path_to_second_audio_file> <path_to_model>")
 
 if len(sys.argv) < 4:
     usage()
