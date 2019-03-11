@@ -7,10 +7,7 @@ Adapted from : https://colab.research.google.com/notebooks/magenta/gansynth/gans
 
 from magenta import music
 from magenta.models.nsynth.utils import load_audio
-from magenta.models.gansynth.lib import flags as lib_flags
-from magenta.models.gansynth.lib import generate_util as gu
-from magenta.models.gansynth.lib import model as lib_model
-from magenta.models.gansynth.lib import util
+from magenta.models.gansynth.lib import flags as lib_flags, generate_util as gu, model as lib_model, util
 from librosa import cqt, midi_to_hz
 
 import os, sys
@@ -33,7 +30,7 @@ if len(sys.argv) < 3:
 ckpt_dir, output_dir = sys.argv[1], sys.argv[2]
 
 batch_size = 16
-sample_rate = 16000
+sample_rate = SAMPLE_RATE
 
 # Make an output directory if it doesn't exist
 output_dir = util.expand_path(output_dir)
