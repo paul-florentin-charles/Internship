@@ -85,13 +85,15 @@
 
 ### About evaluation methods
 
-- Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
 - Inception Score — evaluating the realism of your GAN : [link](https://sudomake.ai/inception-score-explained/ "Inception Score")
+- Mean Opinion Score : [link](https://en.wikipedia.org/wiki/Mean_opinion_score "Mean Opinion Score")
+- MUSHRA : [link](https://en.wikipedia.org/wiki/MUSHRA "MUSHRA")
 
 
 ## Repositories
 
 - "GANSynth" : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/gansynth "GANSynth")
+- MelodyRNN : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/melody_rnn "MelodyRNN")
 - _NSynth_ : [link](https://github.com/tensorflow/magenta/tree/master/magenta/models/nsynth "NSynth")
 - SampleRNN : [link](https://github.com/soroushmehr/sampleRNN_ICLR2017 "SampleRNN")
 - Tacotron : [link](https://github.com/keithito/tacotron "Tacotron")
@@ -125,6 +127,7 @@
 ### Videos
 
 - Coding a Deep Convolutional Generative Adversarial Network (DCGAN) from scratch (Python Tensorflow) : [link](https://www.youtube.com/watch?v=thr7KldvpPw "DCGAN Implementation")
+- 'How neural networks learn' - Part II: Adversarial Examples : [link](https://www.youtube.com/watch?v=4rFOkpI0Lcg "GAN Examples")
 - Introduction to GANs, NIPS 2016 | Ian Goodfellow, OpenAI : [link](https://www.youtube.com/watch?v=9JpdAg6uMXs "Introduction to GANs")
 - Music with Artificial Intelligence | Andrew Huang : [link](https://www.youtube.com/watch?v=AaALLWQmCdI "Music with AI")
 - Project Magenta: Music and Art with Machine Learning : [link](https://www.youtube.com/watch?v=3MmuWFkgYUY "Project Magenta")
@@ -143,3 +146,7 @@
 - Deep Convolutional GAN (DCGAN) : Architecture and choice of the good set of hyper-parameters : [link](https://julianzaidi.wordpress.com/2017/04/24/deep-convolution-gan-dcgan-architecture-and-training/ "DCGAN set-up")
 - Google voice search: faster and more accurate : [link](https://ai.googleblog.com/2015/09/google-voice-search-faster-and-more.html "Google Voice Search")
 - A Recurrent Neural Network Music Generation Tutorial : [link](https://magenta.tensorflow.org/2016/06/10/recurrent-neural-network-generation-tutorial "RNN")
+
+### Others
+
+- The GAN Zoo : [link](https://github.com/hindupuravinash/the-gan-zoo "GAN Zoo")
