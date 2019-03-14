@@ -104,9 +104,12 @@
 ## Datasets
 
 - Classical Piano MIDI : [link](http://www.piano-midi.de/ "Piano MIDI")
+- FMA: A Dataset For Music Analysis : [link](https://github.com/mdeff/fma "FMA")
+- Kaggle Datasets : [link](https://www.kaggle.com/datasets "Kaggle")
 - J.S. Bach MIDI files : [link](http://www.jsbach.net/midi/index.html "Bach MIDI")
 - The MAESTRO Dataset : [link](https://magenta.tensorflow.org/datasets/maestro "MAESTRO")
 - MagnaTagATune Dataset : [link](http://mirg.city.ac.uk/codeapps/the-magnatagatune-dataset "MagnaTagATune")
+- Million Song Dataset : [link](https://labrosa.ee.columbia.edu/millionsong/ "Million Song Dataset")
 - Minst-dataset : [link](https://github.com/ejhumphrey/minst-dataset/ "minst")
 - _The NSynth Dataset_ : [link](https://magenta.tensorflow.org/datasets/nsynth "NSynth")
 
