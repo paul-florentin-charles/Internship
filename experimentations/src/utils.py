@@ -5,9 +5,6 @@ Load any sound file
 Save numpy arrays as wave files
 """
 
-def usage(pname, required_args = [], optional_args = []):
-    raise SystemExit(''.join([bright('Usage:'), magenta_fg(' python3 '), cyan_fg(pname), ' ', ' '.join(required_args), ' ', ' '.join([''.join(['[', arg, ']']) for arg in optional_args])]))
-
 from src.colors import *
 from src.config import S_RATE
 from src.path import __name, __path, __suffix, __with_name, __with_suffix

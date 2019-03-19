@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from src.path import __stem, __with_name
-from src.utils import _load, _save, usage
+from src.utils import _load, _save
+from src.misc import usage
 from src.fx import _convolve
 
 import sys
