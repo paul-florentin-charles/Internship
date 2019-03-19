@@ -1,49 +1,41 @@
 # -*- coding: utf-8 -*-
 
-from os.path import basename, splitext
+"""
+Load any sound file
+Save numpy arrays as wave files
+"""
 
-# Doesn't work if multiple dots (e.g. tar.gz files)
-def __extensionless(fname):
-    return splitext(fname)[0]
+def usage(pname, required_args = [], optional_args = []):
+    raise SystemExit(''.join([bright('Usage:'), magenta_fg(' python3 '), cyan_fg(pname), ' ', ' '.join(required_args), ' ', ' '.join([''.join(['[', arg, ']']) for arg in optional_args])]))
 
-def __pathless(fpath):
-    return basename(fpath)
+from src.colors import *
+from src.config import S_RATE
+from src.path import __name, __path, __suffix, __with_name, __with_suffix
+# TODO: For some reason [from import *] doesn't work
+#from src.path import *
 
-def __mono(raw_data):
-    if raw_data.ndim == 2:
-        return raw_data[:, 0] + raw_data[:, 1]
-    return raw_data
-
-from scipy.io.wavfile import read, write
-
-def _load(fpath):
-    data = dict()
-    
-    data['sample_rate'], data['raw_data'] = read(fpath)
-    data['bit_depth'] = data['raw_data'].dtype.itemsize * 8
-    data['mono'] = data['raw_data'].ndim == 1
-    data['sample_length'] = data['raw_data'].shape[0]
-    data['name'] = __extensionless(__pathless(fpath))
-    
-    return data
-
-def _write(data, extension='wav'):
-    write(''.join([data['name'], '.', extension]), data['sample_rate'], data['raw_data'])
-
-
-from scipy.signal import convolve
+from pydub import AudioSegment
+from scipy.io.wavfile import write
 
 import numpy as np
 
-def _convolve(dry_data, effect_data, name='convolution'):
-    convolved_data = dict(name=name)
+def __mono(audio_segment):
+    if audio_segment.channels == 2:
+        return audio_segment.set_channels(1)
+    return audio_segment
+
+def __normalized(audio_segment):
+    return np.array(audio_segment.get_array_of_samples()) / audio_segment.max
+
+def _load(fpath):
+    return AudioSegment.from_file(__path(fpath))
+
+def _save(npy_array, fpath):
+    while __name(fpath).endswith('.'):
+        fpath = __with_name(fpath, __name(fpath)[:-1])
     
-    raw_data = convolve(dry_data['raw_data'] / max(__mono(dry_data['raw_data'])), effect_data['raw_data'] / max(__mono(effect_data['raw_data'])))
-    
-    convolved_data['raw_data'] = raw_data
-    convolved_data['sample_rate'] = dry_data['sample_rate']
-    convolved_data['bit_depth'] = dry_data['raw_data'].dtype.itemsize * 8
-    convolved_data['mono'] = convolved_data['raw_data'].ndim == 1
-    convolved_data['sample_length'] = convolved_data['raw_data'].shape[0]
-    
-    return convolved_data
+    if __suffix(fpath) != '.wav':
+        fpath = __with_suffix(fpath, '.wav')
+
+    write(fpath, S_RATE, npy_array)
+
