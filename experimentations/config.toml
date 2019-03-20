@@ -1,0 +1,7 @@
+# Configuration file for the fx module
+
+title = "fx"
+
+[audio]
+s_rate = 16000
+conv_mod = 'full'
