@@ -4,15 +4,14 @@
 Apply fx to a dry sound
 """
 
-from src.config import CONV_MOD
-from src.utils import __is_mono, __mono
+from fx.config import CONV_MOD
+from fx.utils import __is_mono, __mono
+
 from scipy.signal import convolve
 
 import numpy as np
 
 def _convolve(dry, fx):
-    # Temporary solution
-    # TODO: adapt to stereo signals
     if __is_mono(dry) or __is_mono(fx):
         _dry = np.array(__mono(dry).get_array_of_samples())
         _fx = np.array(__mono(fx).get_array_of_samples())
@@ -24,5 +23,10 @@ def _convolve(dry, fx):
     # TODO: Convert to 'int16' without ruining the signal
     # TODO: mode='same' keeps stereo but gives distortion
     conv = convolve(_dry / dry.max, _fx / fx.max, mode=CONV_MOD)
-    print(conv.shape)
     return conv
+
+def _fx(dry_signals, fx, func):
+    wet_signals = []
+    for dry in dry_signals:
+        wet_signals.append(func(dry, fx))
+    return wet_signals

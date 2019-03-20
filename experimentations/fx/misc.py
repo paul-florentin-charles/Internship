@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from src.colors import *
-from src.config import CHRS, SIZE
-from src.path import __is_file, __exists, __mkdir, __join_path
+from fx.colors import bright, magenta_fg, cyan_fg
+from fx.config import CHRS, SIZE
+from fx.path import __is_file, __path_exists, __make_dir, __join_path, __create_file
 
 from random import choice
-from fleep import get
+
+import fleep as fl
 
 class NotAudioFile(Exception):
     pass
@@ -18,7 +19,7 @@ def is_audio_file(fpath):
         raise FileNotFoundError
     
     with open(fpath, 'rb') as f:
-        info = get(f.read(128))
+        info = fl.get(f.read(128))
 
     return info.type_matches('audio')
 
@@ -28,7 +29,14 @@ def rstr(size=SIZE, chars=CHRS):
 
 def mkrdir(path='.'):
     dpath = __join_path(path, rstr())
-    while(__exists(dpath)):
-        dpath = __join_path(dpath, rstr())
-    __mkdir(dpath)
+    while(__path_exists(dpath)):
+        dpath = __join_path(path, rstr())
+    __make_dir(dpath)
     return dpath
+
+def mkrfile(path='.'):
+    fpath = __join_path(path, rstr())
+    while(__path_exists(fpath)):
+        fpath = __join_path(path, rstr())
+    __create_file(fpath)
+    return fpath

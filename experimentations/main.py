@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from src.path import __list_files, __join_path, __stem
-from src.utils import _load, _save
-from src.misc import usage, mkrdir
-from src.fx import _convolve
+from fx.utils import _read, _load, _export
+from fx.misc import usage, mkrdir
+from fx.fx import _convolve, _fx
 
 import sys
 
@@ -18,12 +17,13 @@ def main():
     else:
         output_dir = mkrdir()
 
-    impulse_response = _load(sys.argv[1])
+    impulse_response = _read(sys.argv[1])
+    
+    dry_signals = _load(sys.argv[2])
 
-    for fpath in __list_files(sys.argv[2]):
-        dry = _load(fpath)
-        wet = _convolve(dry, impulse_response)
-        _save(wet, __join_path(output_dir, ''.join([__stem(fpath), '_wet'])))
+    wet_signals = _fx(dry_signals, impulse_response, _convolve)
+
+    _export(wet_signals, output_dir)
 
 if __name__ == '__main__':
     main()

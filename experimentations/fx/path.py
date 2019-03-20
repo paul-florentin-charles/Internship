@@ -10,26 +10,26 @@ from pathlib import Path
 def __path(fpath):
     return Path(fpath)
 
-def __suffix(fpath):
+def __file_extension(fpath):
     return __path(fpath).suffix
 
 # Doesn't work if multiple dots (e.g. tar.gz files)
-def __stem(fpath):
+def __no_extension(fpath):
     return __path(fpath).stem
 
-def __name(fpath):
+def __file_name(fpath):
     return __path(fpath).name
 
-def __parent(fpath):
+def __parent_path(fpath):
     return __path(fpath).parent
 
 def __with_name(fpath, fname):
     return __path(fpath).with_name(fname)
 
-def __with_suffix(fpath, fsuffix):
-    return __path(fpath).with_suffix(fsuffix)
+def __with_extension(fpath, fextension):
+    return __path(fpath).with_suffix(fextension)
 
-def __exists(path):
+def __path_exists(path):
     return __path(path).exists()
 
 def __is_file(fpath):
@@ -48,5 +48,9 @@ def __list_files(path):
 def __join_path(lpath, rpath):
     return __path(lpath).joinpath(__path(rpath))
 
-def __mkdir(dpath):
+def __make_dir(dpath):
     __path(dpath).mkdir()
+
+def __create_file(fpath):
+    f = __path(fpath).open(mode='x')
+    f.close()
