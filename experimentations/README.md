@@ -21,6 +21,12 @@ chmod 744 main.py
 ./main.py path/to/impulse/responses/dir path/to/dry/signals/dir [path/to/output/dir]
 ```
 
+## Demo
+
+```bash
+make run
+```
+
 ## Clean
 
 ```bash
@@ -33,14 +39,15 @@ or even
 make cleanall
 ```
 
-although this is not necessary, notably to keep *__pycache__* directories alive
+although this is not necessary, notably to keep *_\_pycache__* directories alive
 
 ## JSON Syntax
 
 ```json
 {
-	"drypath_0": "wetdpath_0",
-	"drypath_1": "wetdpath_1",
+	"drypath0": "wetdirpath0",
+	"drypath1": "wetdirpath1",
+	"drypath2": "wetdirpath2",
 	...
 }
 ```

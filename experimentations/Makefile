@@ -1,3 +1,6 @@
+run:
+	sh demo.sh
+
 clean:
 	rm -rf *~ fx/*~
 

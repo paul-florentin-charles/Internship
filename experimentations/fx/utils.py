@@ -8,7 +8,6 @@ Save numpy arrays as wave files
 from fx.config import S_RATE
 from fx.misc import is_audio_file, NotAudioFile, mkrdir, rstr 
 import fx.path as pth
-# TODO: For some reason [from import *] doesn't work
 
 from pydub import AudioSegment
 from scipy.io.wavfile import write
@@ -35,8 +34,9 @@ def _read(fpath):
 def _load(dpath):
     audio_segments = []
     for fpath in pth.__list_files(dpath):
-        audio_segments.append(_read(fpath))
-
+        if is_audio_file(fpath):
+            audio_segments.append(_read(fpath))
+            
     return audio_segments
 
 def _save(npy_array, fpath, override=True):

@@ -6,38 +6,38 @@ from colorama import Fore, Style
 Module to enhance your strings with colors and emphase
 """
 
-def blue(string):
+def _blue_(string):
     '''Return colorized <string> in blue'''
     return ''.join([Fore.BLUE, str(string), Fore.RESET])
 
-def cyan(string):
+def _cyan_(string):
     '''Return colorized <string> in cyan'''
     return ''.join([Fore.CYAN, str(string), Fore.RESET])
 
-def green(string):
+def _green_(string):
     '''Return colorized <string> in green'''
     return ''.join([Fore.GREEN, str(string), Fore.RESET])
 
-def black(string):
+def _black_(string):
     '''Return colorized <string> in black'''
     return ''.join([Fore.BLACK, str(string), Fore.RESET])
 
-def red(string):
+def _red_(string):
     '''Return colorized <string> in red'''
     return ''.join([Fore.RED, str(string), Fore.RESET])
 
-def yellow(string):
+def _yellow_(string):
     '''Return colorized <string> in yellow'''
     return ''.join([Fore.YELLOW, str(string), Fore.RESET])
 
-def magenta(string):
+def _magenta_(string):
     '''Return colorized <string> in magenta'''
     return ''.join([Fore.MAGENTA, str(string), Fore.RESET])
 
-def bright(string):
+def _bright_(string):
     '''Return brightened <string>, typically similar to bold font'''
     return ''.join([Style.BRIGHT, str(string), Style.RESET_ALL])
 
-def dim(string):
+def _dim_(string):
     '''Return <string> with a sober grey-like font'''
     return ''.join([Style.DIM, str(string), Style.RESET_ALL])

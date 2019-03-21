@@ -3,7 +3,7 @@
 
 from fx.config import JSON_FNAME
 from fx.utils import _load, _export, _read
-from fx.misc import usage, mkrdir
+from fx.misc import usage, mkrdir, is_audio_file
 from fx.fx import _fxs
 import fx.path as pth
 
@@ -24,11 +24,13 @@ def main():
 
     info = dict()
     for idx, fpath in enumerate(pth.__list_files(sys.argv[2])):
-        wet_signals = _fxs(_read(fpath), impulse_responses)
-        dpath = mkrdir(output_dir, prefix=''.join([str(idx), '_']))
-        info[str(fpath)] = str(dpath)
-        _export(wet_signals, dpath)
+        if is_audio_file(fpath):
+            wet_signals = _fxs(_read(fpath), impulse_responses)
+            dpath = mkrdir(output_dir, prefix=''.join([str(idx), '_']))
+            info[str(fpath)] = str(dpath)
+            _export(wet_signals, dpath)
 
+    #TODO: save json file every x steps, if process gets interrupted
     with open(JSON_FNAME, 'w') as fjson:
         json.dump(info, fjson, indent=4)
 

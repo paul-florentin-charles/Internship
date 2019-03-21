@@ -38,11 +38,14 @@ def __is_file(fpath):
 def __is_dir(path):
     return __path(path).is_dir()
 
-def __list_files(path):
+def __list_files(path, recursively=True):
     if __is_file(path):
         return [path]
     elif __is_dir(path):
-        return list(filter(__is_file, __path(path).iterdir()))
+        if recursively:
+            return list(filter(__is_file, __path(path).glob('**/*')))
+        else:
+            return list(filter(__is_file, __path(path).iterdir()))
     return []
 
 def __join_path(lpath, rpath):

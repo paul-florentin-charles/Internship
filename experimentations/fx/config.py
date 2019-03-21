@@ -2,7 +2,7 @@
 
 ## Audio ##
 
-S_RATE = 44100
+S_RATE = 16000
 CONV_MOD = 'same'
 
 ## Misc ##
