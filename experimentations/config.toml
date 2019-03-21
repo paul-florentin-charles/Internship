@@ -4,4 +4,4 @@ title = "fx config"
 
 [audio]
 s_rate = 16000
-conv_mod = 'full'
+conv_mod = 'same'

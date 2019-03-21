@@ -29,7 +29,7 @@ def __with_name(fpath, fname):
 def __with_extension(fpath, fextension):
     return __path(fpath).with_suffix(fextension)
 
-def __path_exists(path):
+def __exists(path):
     return __path(path).exists()
 
 def __is_file(fpath):
@@ -50,9 +50,3 @@ def __join_path(lpath, rpath):
 
 def __make_dir(dpath):
     __path(dpath).mkdir()
-
-"""
-def __create_file(fpath):
-    f = __path(fpath).open(mode='x')
-    f.close()
-"""

@@ -13,16 +13,16 @@ import numpy as np
 
 def _convolve(dry, fx):
     if __is_mono(dry) or __is_mono(fx):
-        _dry = np.array(__mono(dry).get_array_of_samples())
-        _fx = np.array(__mono(fx).get_array_of_samples())
+        _dry, _fx = map(lambda x : np.array(__mono(x).get_array_of_samples()), (dry, fx))
+        _dry, _fx = map(lambda x : x / max(x), (_dry, _fx))
     else:
-        _dry = np.array(dry.get_array_of_samples()).reshape(-1, 2)
-        _fx = np.array(fx.get_array_of_samples()).reshape(-1, 2)
+        _dry, _fx = map(lambda x : np.array(x.get_array_of_samples()).reshape(-1, 2), (dry, fx))
+        _dry, _fx = map(lambda x : x / max(map(sum, x)), (_dry, _fx))
 
     # Give a 'float64' numpy array
     # TODO: Convert to 'int16' without ruining the signal
     # TODO: mode='same' keeps stereo but gives distortion
-    conv = convolve(_dry / dry.max, _fx / fx.max, mode=CONV_MOD)
+    conv = convolve(_dry, _fx, mode=CONV_MOD)
     return conv
 
 def _fxs(dry, fxs, func=_convolve):

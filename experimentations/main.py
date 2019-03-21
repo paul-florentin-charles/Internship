@@ -1,33 +1,36 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from fx.utils import _load, _export
-from fx.metadata import init_dict
+from fx.config import JSON_FNAME
+from fx.utils import _load, _export, _read
 from fx.misc import usage, mkrdir
 from fx.fx import _fxs
+import fx.path as pth
 
-import sys
+import sys, json
 
 def main():
     argc = len(sys.argv)
 
     if argc < 3:
-        usage(__file__.replace('./', ''), ['path/to/impulse/responses/dir', 'path/to/dry/signals/dir'], ['path/to/output/dir'])
+        raise SystemExit(usage(__file__.replace('./', ''), ['path/to/impulse/responses/dir', 'path/to/dry/signals/dir'], ['path/to/output/dir']))
 
     if argc > 3:
         output_dir = sys.argv[3]
     else:
         output_dir = mkrdir()
 
-    metadata = init_dict(sys.argv[2])
-    print(metadata)
+    impulse_responses = _load(sys.argv[1])
 
-    impulse_responses, dry_signals = _load(sys.argv[1]), _load(sys.argv[2])
-    
-    for idx, dry in enumerate(dry_signals):
-        wet_signals = _fxs(dry, impulse_responses)
+    info = dict()
+    for idx, fpath in enumerate(pth.__list_files(sys.argv[2])):
+        wet_signals = _fxs(_read(fpath), impulse_responses)
         dpath = mkrdir(output_dir, prefix=''.join([str(idx), '_']))
+        info[str(fpath)] = str(dpath)
         _export(wet_signals, dpath)
+
+    with open(JSON_FNAME, 'w') as fjson:
+        json.dump(info, fjson, indent=4)
 
 if __name__ == '__main__':
     main()

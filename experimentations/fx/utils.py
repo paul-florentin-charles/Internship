@@ -40,7 +40,7 @@ def _load(dpath):
     return audio_segments
 
 def _save(npy_array, fpath, override=True):
-    if not override and pth.__path_exists(fpath):
+    if not override and pth.__exists(fpath):
         return
     
     while pth.__file_name(fpath).endswith('.'):
