@@ -25,8 +25,8 @@ def _convolve(dry, fx):
     conv = convolve(_dry / dry.max, _fx / fx.max, mode=CONV_MOD)
     return conv
 
-def _fx(dry_signals, fx, func):
+def _fxs(dry, fxs, func=_convolve):
     wet_signals = []
-    for dry in dry_signals:
+    for fx in fxs:
         wet_signals.append(func(dry, fx))
     return wet_signals

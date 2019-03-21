@@ -1,6 +1,6 @@
 # Configuration file for the fx module
 
-title = "fx"
+title = "fx config"
 
 [audio]
 s_rate = 16000

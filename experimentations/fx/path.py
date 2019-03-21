@@ -51,6 +51,8 @@ def __join_path(lpath, rpath):
 def __make_dir(dpath):
     __path(dpath).mkdir()
 
+"""
 def __create_file(fpath):
     f = __path(fpath).open(mode='x')
     f.close()
+"""

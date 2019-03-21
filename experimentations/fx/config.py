@@ -8,4 +8,4 @@ CONV_MOD = 'full'
 ## Misc ##
 
 CHRS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
-SIZE = 8
+SIZE = 4

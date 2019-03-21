@@ -1,8 +1,10 @@
 **~
 __pycache__/
 !.gitkeep
+**.wav
 
 TODO.md
 IDEA.md
 /resources/demos/audio/**
-/experimentations/audio/**
+/experimentations/dry/**
+/experimentations/ir/**
