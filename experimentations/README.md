@@ -3,6 +3,7 @@
 - Python 3.x
 - Pip 3.x
 - [GNU Make x.x]
+- [Curl x.x]
 
 ```bash
 pip3 install -r requirements.txt
@@ -21,10 +22,12 @@ chmod 744 main.py
 ./main.py path/to/impulse/responses/dir path/to/dry/signals/dir [path/to/output/dir]
 ```
 
+information will be stored in a JSON file whose name is set in **config.toml**
+
 ## Demo
 
 ```bash
-make run
+make demo
 ```
 
 ## Clean

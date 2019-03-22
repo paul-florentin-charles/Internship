@@ -23,6 +23,12 @@ def __mono(audio_segment):
 
     return audio_segment
 
+def __convert(audio_segment, preprocess=ID):
+    return np.array(preprocess(audio_segment).get_array_of_samples())
+
+def __normalize(npy_array, operation=ID):
+    return npy_array / max(map(operation, npy_array))
+
 ## Reading and writing audio files ##
 
 def _read(fpath):

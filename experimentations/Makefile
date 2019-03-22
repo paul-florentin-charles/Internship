@@ -1,4 +1,4 @@
-run:
+demo:
 	sh demo.sh
 
 clean:

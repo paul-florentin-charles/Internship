@@ -9,5 +9,9 @@ CONV_MOD = 'same'
 
 CHRS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
 SIZE = 4
+ID = lambda x : x
+
+## JSON ##
 
 JSON_FNAME = 'info.json'
+SAVE_STEPS = 20

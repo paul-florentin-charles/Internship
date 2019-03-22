@@ -4,20 +4,21 @@
 Apply fx to a dry sound
 """
 
-from fx.config import CONV_MOD
-from fx.utils import __is_mono, __mono
+from fx.config import CONV_MOD, ID
+from fx.utils import __is_mono, __mono, __convert, __normalize
 
+from itertools import repeat
 from scipy.signal import convolve
 
 import numpy as np
 
 def _convolve(dry, fx):
     if __is_mono(dry) or __is_mono(fx):
-        _dry, _fx = map(lambda x : np.array(__mono(x).get_array_of_samples()), (dry, fx))
-        _dry, _fx = map(lambda x : x / max(x), (_dry, _fx))
+        _dry, _fx = map(__convert, (dry, fx), repeat(__mono))
+        _dry, _fx = map(__normalize, (_dry, _fx))
     else:
-        _dry, _fx = map(lambda x : np.array(x.get_array_of_samples()).reshape(-1, 2), (dry, fx))
-        _dry, _fx = map(lambda x : x / max(map(sum, x)), (_dry, _fx))
+        _dry, _fx = map(__convert, (dry, fx))
+        _dry, _fx = map(__normalize, (_dry, _fx), repeat(sum))
 
     # Give a 'float64' numpy array
     # TODO: Convert to 'int16' without ruining the signal
