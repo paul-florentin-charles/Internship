@@ -5,15 +5,35 @@ Load any sound file
 Save numpy arrays as wave files
 """
 
-from fx.config import S_RATE
-from fx.misc import is_audio_file, NotAudioFile, mkrdir, rstr 
+from fx.config import S_RATE, ID
+from fx.misc import mkrdir, rstr 
 import fx.path as pth
 
 from pydub import AudioSegment
 from scipy.io.wavfile import write
+from fleep import get
 
-## Various functions to manipulate audio properties ##
+import numpy as np
 
+
+## Useful to avoid picking non audio files ##
+
+def __is_audio_file(fpath):
+    '''Checks wether file at <fpath> is an audio file or not'''
+    if not pth.__is_file(fpath):
+        return False
+    
+    with open(fpath, 'rb') as f:
+        info = get(f.read(128))
+        return info.type_matches('audio')
+
+    return False
+
+def __list_audio_files(path, recursively=True):
+    return list(filter(__is_audio_file, pth.__list_files(path, recursively)))
+
+## Various functions based on audio properties ##
+              
 def __is_mono(audio_segment):
     return audio_segment.channels == 1
 
@@ -32,15 +52,15 @@ def __normalize(npy_array, operation=ID):
 ## Reading and writing audio files ##
 
 def _read(fpath):
-    if is_audio_file(fpath):
+    if __is_audio_file(fpath):
         return AudioSegment.from_file(pth.__path(fpath))
 
-    raise NotAudioFile
+    return AudioSegment.empty()
 
 def _load(dpath):
     audio_segments = []
     for fpath in pth.__list_files(dpath):
-        if is_audio_file(fpath):
+        if __is_audio_file(fpath):
             audio_segments.append(_read(fpath))
             
     return audio_segments

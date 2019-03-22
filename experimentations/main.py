@@ -2,10 +2,9 @@
 # -*- coding: utf-8 -*-
 
 from fx.config import JSON_FNAME, SAVE_STEPS
-from fx.utils import _load, _export, _read
-from fx.misc import usage, mkrdir, is_audio_file
-from fx.fx import _fxs
-import fx.path as pth
+from fx.utils import _load, _export, _read, __list_audio_files
+from fx.misc import usage, mkrdir
+from fx.fx import _apply_fxs
 
 import sys, json
 
@@ -22,15 +21,12 @@ def main():
 
     impulse_responses = _load(sys.argv[1])
 
-    with open(JSON_FNAME, 'w'):
-        pass
+    with open(JSON_FNAME, 'w'): pass
     
     info = dict()
         
-    for idx, dryfpath in enumerate(pth.__list_files(sys.argv[2])):
-        if not is_audio_file(dryfpath):
-            continue
-        wet_signals = _fxs(_read(dryfpath), impulse_responses)
+    for idx, dryfpath in enumerate(__list_audio_files(sys.argv[2])):
+        wet_signals = _apply_fxs(_read(dryfpath), impulse_responses)
         dpath = mkrdir(output_dir, prefix=''.join([str(idx), '_']))
         info[str(dryfpath)] = str(dpath)
         _export(wet_signals, dpath)

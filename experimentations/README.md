@@ -42,7 +42,7 @@ or even
 make cleanall
 ```
 
-although this is not necessary, notably to keep *_\_pycache__* directories alive
+although this will remove *_\_pycache__* directories
 
 ## JSON Syntax
 
