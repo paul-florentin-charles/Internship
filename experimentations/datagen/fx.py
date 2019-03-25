@@ -18,16 +18,10 @@ def _convolve(dry, fx):
         _dry, _fx = __convert(dry), __convert(fx)
         _dry, _fx = __normalize(_dry, sum), __normalize(_fx, sum)
 
-    # Give a 'float64' numpy array
+    # Give a 'float32' numpy array
     # TODO: Convert to 'int16' without ruining the signal
     # TODO: mode='same' keeps stereo but gives distortion
     conv = convolve(_dry, _fx, mode=CONV_MOD)
-
-    """
-    conv = conv / max(conv)
-    conv = conv * (2**15 - 1)
-    conv.dtype = 'int16'
-    """
     
     return conv
 

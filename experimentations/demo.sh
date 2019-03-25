@@ -44,7 +44,7 @@ wet_dname="wet"
 # Getting IRs
 if [ ! -d $fx_dname ]
 then
-    echo "Getting dataset of fxs"
+    echo "Retrieving dataset of fxs"
     curl -O $fx_url
     unzip $fx_fname -d $fx_dname
     rm -rf $fx_fname
@@ -67,6 +67,7 @@ then
     echo "Feel free to interrupt process, information are saved progressively"
     mkdir -p $wet_dname
     ./main.py $fx_dname $dry_dname $wet_dname
+    echo "Done"
 else
     echo "You already have launched demo, please remove "$wet_dname" folder"
 fi
