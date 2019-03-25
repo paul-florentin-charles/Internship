@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from fx.config import JSON_FNAME, SAVE_STEPS
-from fx.utils import _load, _export, _read, __list_audio_files
-from fx.misc import usage, mkrdir
-from fx.fx import _apply_fxs
+from datagen.config import JSON_FNAME, SAVE_STEPS
+from datagen.utils import _load, _export, _read, __list_audio_files
+from datagen.misc import usage, mkrdir
+from datagen.fx import _apply_fxs
 
 import sys, json
 

@@ -30,6 +30,12 @@ information will be stored in a JSON file whose name is set in **config.toml**
 make demo
 ```
 
+if you wish to precise mode for demo, by default the mode is set on a very quick demo
+
+```bash
+make demo [md=[long/slow/fast/quick]]
+```
+
 ## Clean
 
 ```bash
@@ -42,7 +48,7 @@ or even
 make cleanall
 ```
 
-although this will remove *_\_pycache__* directories
+although this will remove directories used for demos
 
 ## JSON Syntax
 

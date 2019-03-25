@@ -5,9 +5,9 @@ Load any sound file
 Save numpy arrays as wave files
 """
 
-from fx.config import S_RATE, ID
-from fx.misc import mkrdir, rstr 
-import fx.path as pth
+from datagen.config import S_RATE, ID
+from datagen.misc import mkrdir, rstr 
+import datagen.path as pth
 
 from pydub import AudioSegment
 from scipy.io.wavfile import write

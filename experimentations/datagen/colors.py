@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from colorama import Fore, Style
-
 """
 Module to enhance your strings with colors and emphase
 """
+
+from colorama import Fore, Style
+
 
 def _blue_(string):
     '''Returns colorized <string> in blue'''

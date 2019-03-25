@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from fx.colors import _bright_, _magenta_, _cyan_
-import fx.path as pth
+from datagen.colors import _bright_, _magenta_, _cyan_
+import datagen.path as pth
 
 from random import choice
 from string import ascii_letters, digits
