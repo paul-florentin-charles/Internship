@@ -1,3 +1,5 @@
+# TODO: add colors or convert to python script
+
 if [[ $0 != "demo.sh" ]] && [[ $0 != "./demo.sh" ]]
 then
     echo "Execute script from its directory"
@@ -69,5 +71,5 @@ then
     ./main.py $fx_dname $dry_dname $wet_dname
     echo "Done"
 else
-    echo "You already have launched demo, please remove "$wet_dname" folder"
+    echo "You already have launched demo, please remove {"$wet_dname"} folder to relaunch demo, or even {make cleanall} if you wish to launch another demo"
 fi

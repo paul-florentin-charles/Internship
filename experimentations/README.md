@@ -30,10 +30,10 @@ information will be stored in a JSON file whose name is set in **config.toml**
 make demo
 ```
 
-if you wish to precise mode for demo, by default the mode is set on a very quick demo
+by default the mode is set on a very quick demo, but if you wish to precise mode 
 
 ```bash
-make demo [md=[long/slow/fast/quick]]
+make demo md=[long/slow/fast/quick]
 ```
 
 ## Clean

@@ -2,7 +2,7 @@ demo:
 	@sh demo.sh md=MODE
 
 clean:
-	@rm -rf *~ fx/*~ __pycache__ fx/__pycache__
+	@rm -rf *~ datagen/*~ parser/*~ __pycache__ datagen/__pycache__ parser/__pycache__
 
 cleanall: clean
 	@rm -rf dry fx wet info.json

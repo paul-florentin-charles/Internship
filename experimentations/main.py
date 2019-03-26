@@ -35,7 +35,7 @@ def main():
         
         if (idx + 1) % ptml.value('meta', 'save_steps') == 0:
             pjsn._dump(ptml.value('meta', 'json_fname'), info)
-            pjsn._reset(info)
+            info = dict()
 
     pjsn._dump(ptml.value('meta', 'json_fname'), info)
 

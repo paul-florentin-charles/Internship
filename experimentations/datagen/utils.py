@@ -44,11 +44,19 @@ def __mono(audio_segment):
 
     return audio_segment
 
-def __convert(audio_segment, preprocess=ID):
-    return np.array(preprocess(audio_segment).get_array_of_samples())
+def __convert(audio_segment, preprocess=ID, _type='float64'):
+    return np.array(preprocess(audio_segment).get_array_of_samples(), dtype=_type)
+
+def __float2pcm(npy_array, _type='int16'):    
+    info = np.iinfo(_type)
+    
+    amp = 2**(info.bits - 1)
+    npy_array = npy_array * amp + info.min + amp
+
+    return npy_array.clip(info.min, info.max).astype(_type)
 
 def __normalize(npy_array, operation=ID):
-    return npy_array // max(map(operation, npy_array))
+    return npy_array / max(map(operation, npy_array))
 
 ## Reading and writing audio files ##
 
