@@ -5,9 +5,10 @@ Load any sound file
 Save numpy arrays as wave files
 """
 
-from datagen.config import S_RATE, ID
+from datagen.config import ID
 from datagen.misc import mkrdir, rstr 
 import datagen.path as pth
+import parser._toml as ptml
 
 from pydub import AudioSegment
 from scipy.io.wavfile import write
@@ -75,7 +76,7 @@ def _save(npy_array, fpath, override=True):
     if pth.__file_extension(fpath) != '.wav':
         fpath = pth.__with_extension(fpath, '.wav')
 
-    write(fpath, S_RATE, npy_array)
+    write(fpath, ptml.value('audio', 's_rate'), npy_array)
 
 def _export(npy_arrays, outdpath=None, override=True):
     if outdpath is None:

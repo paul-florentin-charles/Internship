@@ -5,7 +5,7 @@ clean:
 	@rm -rf *~ fx/*~ __pycache__ fx/__pycache__
 
 cleanall: clean
-	@rm -rf dry fx wet
+	@rm -rf dry fx wet info.json
 
 help:
 	@echo "DEMO: make demo [md=[long/slow/fast/quick]]"

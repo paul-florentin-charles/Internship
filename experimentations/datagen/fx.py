@@ -4,8 +4,8 @@
 Apply fx to a dry sound
 """
 
-from datagen.config import CONV_MOD
 from datagen.utils import __is_mono, __mono, __convert, __normalize
+import parser._toml as ptml
 
 from scipy.signal import convolve
 
@@ -18,10 +18,10 @@ def _convolve(dry, fx):
         _dry, _fx = __convert(dry), __convert(fx)
         _dry, _fx = __normalize(_dry, sum), __normalize(_fx, sum)
 
-    # Give a 'float32' numpy array
+    # Gives a 'float64' numpy array
     # TODO: Convert to 'int16' without ruining the signal
     # TODO: mode='same' keeps stereo but gives distortion
-    conv = convolve(_dry, _fx, mode=CONV_MOD)
+    conv = convolve(_dry, _fx, mode=ptml.value('audio', 'conv_mod'))
     
     return conv
 
