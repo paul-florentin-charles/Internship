@@ -6,7 +6,13 @@
 - [Curl x.x]
 
 ```bash
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
+```
+
+or equivalent
+
+```bash
+make install
 ```
 
 ## Run

@@ -1,3 +1,6 @@
+install:
+	@sudo pip3 install -r requirements.txt
+
 demo:
 	@sh demo.sh md=MODE
 
@@ -8,5 +11,7 @@ cleanall: clean
 	@rm -rf dry fx wet info.json
 
 help:
+	@echo "INSTALL /w pip: make install"
+	#@echo "DEMO: make demo [md=[big/medium/small/tiny]]"
 	@echo "DEMO: make demo [md=[long/slow/fast/quick]]"
 	@echo "CLEAN: make clean[all]"

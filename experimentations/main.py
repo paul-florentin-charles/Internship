@@ -7,6 +7,7 @@ from datagen.fx import _apply_fxs
 import parser._json as pjsn
 import parser._toml as ptml
 from neuralnet.utils import retrieve_data
+#import neuralnet.model as nnmodel
 
 import sys
 
@@ -16,10 +17,9 @@ def main():
     if argc < 3:
         raise SystemExit(usage(__file__.replace('./', ''), ['path/to/impulse/responses/dir', 'path/to/dry/signals/dir'], ['path/to/output/dir']))
 
-    if argc > 3:
-        output_dir = sys.argv[3]
-    else:
-        output_dir = mkrdir()
+    # Dataset generation
+    
+    output_dir = sys.argv[3] if argc > 3 else mkrdir()
 
     impulse_responses = _load(sys.argv[1])
 
@@ -41,7 +41,16 @@ def main():
 
     pjsn._dump(json_fname, info)
 
+    # Model training
+
     data, labels = retrieve_data()
+
+    """
+    model = nnmodel._init()
+    nnmodel._compile(model)
+    nnmodel._train(model, data, labels)
+    print(nnmodel._evaluate(model, data, labels)
+    """
 
 if __name__ == '__main__':
     main()

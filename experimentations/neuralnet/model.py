@@ -3,7 +3,7 @@
 import parser._toml as ptml
 
 from keras.models import Sequential
-from keras.layers import Conv1D
+from keras.layers import Dense, Conv1D
 
 def _init():
     model = Sequential()

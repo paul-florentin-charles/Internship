@@ -4,26 +4,28 @@
 Apply fx to a dry sound
 """
 
-from datagen.utils import __is_mono, __mono, __convert, __normalize, __float2pcm
+import datagen.utils as utls
 import parser._toml as ptml
 
 from scipy.signal import convolve
 
+from itertools import repeat
 import numpy as np
 
                                                     
 def _convolve(dry, fx):
-    # TODO: downsample to sample_rate if necessary
-    if __is_mono(dry) or __is_mono(fx):
-        _dry, _fx = __convert(dry, __mono), __convert(fx, __mono)
-        _dry, _fx = __normalize(_dry), __normalize(_fx)
-    else:
-        _dry, _fx = __convert(dry), __convert(fx)
-        _dry, _fx = __normalize(_dry, sum), __normalize(_fx, sum)
+    dry, fx = map(utls.__set_sample_rate, (dry, fx), repeat(ptml.value('audio', 's_rate')))
     
+    if utls.__is_mono(dry) or utls.__is_mono(fx):
+        _dry, _fx = utls.__convert(dry, utls.__mono), utls.__convert(fx, utls.__mono)
+        _dry, _fx = utls.__normalize(_dry), utls.__normalize(_fx)
+    else:
+        _dry, _fx = utls.__convert(dry), utls.__convert(fx)
+        _dry, _fx = utls.__normalize(_dry, sum), utls.__normalize(_fx, sum)
+
     _conv = convolve(_dry, _fx, mode=ptml.value('audio', 'conv_mod'))
-    _conv = __normalize(_conv, sum) if _conv.ndim == 2 else __normalize(_conv)
-    _conv = __float2pcm(_conv)
+    _conv = utls.__normalize(_conv, sum) if _conv.ndim == 2 else utls.__normalize(_conv)
+    _conv = utls.__float2pcm(_conv)
     
     return _conv
 

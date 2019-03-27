@@ -39,10 +39,10 @@ def __is_mono(audio_segment):
     return audio_segment.channels == 1
 
 def __mono(audio_segment):
-    if audio_segment.channels == 2:
-        return audio_segment.set_channels(1)
+    return audio_segment.set_channels(1)
 
-    return audio_segment
+def __set_sample_rate(audio_segment, sample_rate):
+    return audio_segment.set_frame_rate(sample_rate)
 
 def __convert(audio_segment, preprocess=ID, _type='float64'):
     return np.array(preprocess(audio_segment).get_array_of_samples(), dtype=_type)
