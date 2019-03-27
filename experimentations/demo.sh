@@ -71,5 +71,5 @@ then
     ./main.py $fx_dname $dry_dname $wet_dname
     echo "Done"
 else
-    echo "You already have launched demo, please remove {"$wet_dname"} folder to relaunch demo, or even {make cleanall} if you wish to launch another demo"
+    echo "You already have launched demo, please remove {"$wet_dname"} folder to relaunch demo, or even do {make cleanall} if you wish to launch another demo"
 fi

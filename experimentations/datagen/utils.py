@@ -49,9 +49,10 @@ def __convert(audio_segment, preprocess=ID, _type='float64'):
 
 def __float2pcm(npy_array, _type='int16'):    
     info = np.iinfo(_type)
-    
     amp = 2**(info.bits - 1)
-    npy_array = npy_array * amp + info.min + amp
+    offset = info.min + amp
+    
+    npy_array = npy_array * amp + offset
 
     return npy_array.clip(info.min, info.max).astype(_type)
 

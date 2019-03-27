@@ -6,6 +6,7 @@ from datagen.misc import usage, mkrdir
 from datagen.fx import _apply_fxs
 import parser._json as pjsn
 import parser._toml as ptml
+from neuralnet.utils import retrieve_data
 
 import sys
 
@@ -22,7 +23,9 @@ def main():
 
     impulse_responses = _load(sys.argv[1])
 
-    open(ptml.value('meta', 'json_fname'), 'w').close()
+    save_steps, json_fname = ptml.value('meta', 'save_steps'), ptml.value('meta', 'json_fname')
+
+    open(json_fname, 'w').close()
     
     info = dict()
         
@@ -33,11 +36,12 @@ def main():
 
         pjsn._write(info, str(dryfpath), str(dpath))
         
-        if (idx + 1) % ptml.value('meta', 'save_steps') == 0:
-            pjsn._dump(ptml.value('meta', 'json_fname'), info)
-            info = dict()
+        if (idx + 1) % save_steps == 0:
+            pjsn._dump(json_fname, info)
 
-    pjsn._dump(ptml.value('meta', 'json_fname'), info)
+    pjsn._dump(json_fname, info)
+
+    data, labels = retrieve_data()
 
 if __name__ == '__main__':
     main()
