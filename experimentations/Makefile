@@ -1,8 +1,8 @@
 install:
 	@sudo pip3 install -r requirements.txt
 
-demo:
-	@sh demo.sh md=MODE
+demo: 
+	@./demo.py 
 
 clean:
 	@rm -rf *~ datagen/*~ parser/*~ __pycache__ datagen/__pycache__ parser/__pycache__
@@ -12,6 +12,5 @@ cleanall: clean
 
 help:
 	@echo "INSTALL /w pip: make install"
-	#@echo "DEMO: make demo [md=[big/medium/small/tiny]]"
-	@echo "DEMO: make demo [md=[long/slow/fast/quick]]"
+	@echo "DEMO: make demo"
 	@echo "CLEAN: make clean[all]"

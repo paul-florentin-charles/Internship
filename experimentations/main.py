@@ -4,42 +4,35 @@
 from datagen.utils import _load, _export, _read, __list_audio_files
 from datagen.misc import usage, mkrdir
 from datagen.fx import _apply_fxs
-import parser._json as pjsn
-import parser._toml as ptml
+import datagen.path as pth
+import parser._json as jsn, parser._toml as tml
 from neuralnet.utils import retrieve_data
 #import neuralnet.model as nnmodel
 
 import sys
 
-def main():
-    argc = len(sys.argv)
-
-    if argc < 3:
-        raise SystemExit(usage(__file__.replace('./', ''), ['path/to/impulse/responses/dir', 'path/to/dry/signals/dir'], ['path/to/output/dir']))
-
+def main(dry_dpath, ir_dpath, output_dir):
     # Dataset generation
-    
-    output_dir = sys.argv[3] if argc > 3 else mkrdir()
 
-    impulse_responses = _load(sys.argv[1])
+    save_steps, json_fname = tml.value('meta', 'save_steps'), tml.value('meta', 'json_fname')
 
-    save_steps, json_fname = ptml.value('meta', 'save_steps'), ptml.value('meta', 'json_fname')
+    impulse_responses = _load(ir_dpath)
 
-    open(json_fname, 'w').close()
+    pth.__create_file(json_fname)
     
     info = dict()
         
-    for idx, dryfpath in enumerate(__list_audio_files(sys.argv[2])):
+    for idx, dryfpath in enumerate(__list_audio_files(dry_dpath)):
         wet_signals = _apply_fxs(_read(dryfpath), impulse_responses)
         dpath = mkrdir(output_dir, prefix=''.join([str(idx), '_']))
         _export(wet_signals, dpath)
 
-        pjsn._write(info, str(dryfpath), str(dpath))
+        jsn._write(info, str(dryfpath), str(dpath))
         
         if (idx + 1) % save_steps == 0:
-            pjsn._dump(json_fname, info)
+            jsn._dump(json_fname, info)
 
-    pjsn._dump(json_fname, info)
+    jsn._dump(json_fname, info)
 
     # Model training
 
@@ -53,4 +46,7 @@ def main():
     """
 
 if __name__ == '__main__':
-    main()
+    if len(sys.argv) < 4:
+        raise SystemExit(usage(__file__.replace('./', ''), ['path/to/dry/signals/dir', 'path/to/impulse/responses/dir', 'path/to/output/dir']))
+    
+    main(*sys.argv[1:])

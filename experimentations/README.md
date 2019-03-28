@@ -18,14 +18,14 @@ make install
 ## Run
 
 ```bash
-python3 main.py path/to/impulse/responses/dir path/to/dry/signals/dir [path/to/output/dir]
+python3 main.py path/to/dry/signals/dir path/to/impulse/responses/dir path/to/output/dir
 ```
 
 or as a script
 
 ```bash
 chmod 744 main.py
-./main.py path/to/impulse/responses/dir path/to/dry/signals/dir [path/to/output/dir]
+./main.py path/to/dry/signals/dir path/to/impulse/responses/dir path/to/output/dir
 ```
 
 information will be stored in a JSON file whose name is set in **config.toml**
@@ -36,11 +36,13 @@ information will be stored in a JSON file whose name is set in **config.toml**
 make demo
 ```
 
-by default the mode is set on a very quick demo, but if you wish to precise mode 
+you can change the demo size by modifying the field 'size' in section 'demo' in **config.toml**
 
-```bash
-make demo md=[long/slow/fast/quick]
-```
+possible values are :
+* `tiny`
+* `small`
+* `medium`
+* `big`
 
 ## Clean
 

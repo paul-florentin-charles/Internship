@@ -8,11 +8,11 @@ Save numpy arrays as wave files
 from datagen.config import ID
 from datagen.misc import mkrdir, rstr 
 import datagen.path as pth
-import parser._toml as ptml
+import parser._toml as tml
 
 from pydub import AudioSegment
 from scipy.io.wavfile import write
-from fleep import get
+import fleep
 
 import numpy as np
 
@@ -25,7 +25,7 @@ def __is_audio_file(fpath):
         return False
     
     with open(fpath, 'rb') as f:
-        info = get(f.read(128))
+        info = fleep.get(f.read(128))
         return info.type_matches('audio')
 
     return False
@@ -85,7 +85,7 @@ def _save(npy_array, fpath, override=True):
     if pth.__file_extension(fpath) != '.wav':
         fpath = pth.__with_extension(fpath, '.wav')
 
-    write(fpath, ptml.value('audio', 's_rate'), npy_array)
+    write(fpath, tml.value('audio', 's_rate'), npy_array)
 
 def _export(npy_arrays, outdpath=None, override=True):
     if outdpath is None:

@@ -10,10 +10,14 @@ conv_mod = 'same'
 [meta]
 json_fname = 'info.json'
 save_steps = 40
-datasets_url = 'https://raw.githubusercontent.com/polochinoc/various-audio-datasets/master/'
 
 [neuralnet]
 optimizer = 'sgd'
 loss = 'mse'
 batch_size = 32
 epochs = 1
+
+[demo]
+datasets_url = 'https://raw.githubusercontent.com/polochinoc/various-audio-datasets/master/'
+dnames = ['dry', 'fx', 'wet']
+size = 'tiny'

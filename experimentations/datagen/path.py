@@ -41,17 +41,30 @@ def __with_extension(fpath, fextension):
 def __exists(path):
     return __path(path).exists()
 
-def __is_file(fpath):
-    return __path(fpath).is_file()
+def __is_file(path):
+    return __path(path).is_file()
 
 def __is_dir(path):
     return __path(path).is_dir()
 
 ## Path creation ##
 
-def __make_dir(dpath):
-    __path(dpath).mkdir()
+def __make_dir(path):
+    if not __exists(path):
+        __path(path).mkdir()
 
+def __remove_dir(path):
+    if __is_dir(path):
+        __path(path).rmdir()
+    
+def __create_file(path, override=True):
+    if not __is_dir(path):
+        __path(path).touch(exist_ok=override)
+    
+def __remove_file(path):
+    if __is_file(path):
+        __path(path).unlink()
+        
 ## Path miscellaneous ##
 
 def __list_files(path, recursively=True):
