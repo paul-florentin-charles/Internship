@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import src.parser.toml as tml, src.parser.json as jsn
-from src.datagen.utils import _read, _load, __mono, __convert
+from src.datagen.utils import __mono, __convert
+from src.datagen.io import _read, _load
 
 from random import choice
 import numpy as np

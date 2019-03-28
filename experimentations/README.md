@@ -36,7 +36,7 @@ information will be stored in a JSON file whose name is set in **config.toml**
 make demo
 ```
 
-you can change the demo size by modifying the field 'size' in section 'demo' in **config.toml**
+you can change the demo size by modifying the field *size* in section *demo* in **config.toml**
 
 possible values are :
 * `tiny`

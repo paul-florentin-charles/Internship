@@ -4,7 +4,7 @@
 import src.utils.path as pth
 import src.utils.logger as log
 import src.parser.toml as tml
-from main import main
+from src.run import run
 
 from subprocess import call
 from shutil import unpack_archive
@@ -22,6 +22,7 @@ def demo():
 
     log.info('Scraping datasets of notes and impulse responses')
 
+    # TODO: check pysftp get method to download file
     call(['curl', '-O', note_url, '-O', fx_url])
 
     # Extracting data
@@ -38,7 +39,7 @@ def demo():
 
     # Execute main script
 
-    main(*dnames)
+    run(*dnames)
 
     log.shutdown()
 
