@@ -5,10 +5,10 @@ Load any sound file
 Save numpy arrays as wave files
 """
 
-from datagen.config import ID
-from datagen.misc import mkrdir, rstr 
-import datagen.path as pth
-import parser._toml as tml
+from src.utils.config import ID
+from src.utils.tools import mkrdir, rstr 
+import src.utils.path as pth
+import src.parser.toml as tml
 
 from pydub import AudioSegment
 from scipy.io.wavfile import write

@@ -5,10 +5,10 @@ demo:
 	@./demo.py 
 
 clean:
-	@rm -rf *~ datagen/*~ parser/*~ __pycache__ datagen/__pycache__ parser/__pycache__
+	@rm -rf `find -name "*~"`
 
 cleanall: clean
-	@rm -rf dry fx wet info.json
+	@rm -rf `find -name "__pycache__"`
 
 help:
 	@echo "INSTALL /w pip: make install"

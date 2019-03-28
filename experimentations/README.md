@@ -50,13 +50,13 @@ possible values are :
 make clean
 ```
 
-or even
+or
 
 ```bash
 make cleanall
 ```
 
-although this will remove directories used for demos
+note that this will remove *_\_pycache__* directories, possibly slowing down next use
 
 ## JSON Syntax
 

@@ -4,8 +4,8 @@
 Apply fx to a dry sound
 """
 
-import datagen.utils as utls
-import parser._toml as tml
+import src.datagen.utils as utls
+import src.parser.toml as tml
 
 from scipy.signal import convolve
 

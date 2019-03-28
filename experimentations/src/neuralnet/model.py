@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import parser._toml as tml
+import src.parser.toml as tml
 
 from keras.models import Sequential
 from keras.layers import Dense, Conv1D

@@ -10,6 +10,7 @@ conv_mod = 'same'
 [meta]
 json_fname = 'info.json'
 save_steps = 40
+#log_fname = 'history.log'
 
 [neuralnet]
 optimizer = 'sgd'

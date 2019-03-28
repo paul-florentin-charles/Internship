@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from datagen.utils import _load, _export, _read, __list_audio_files
-from datagen.misc import usage, mkrdir
-from datagen.fx import _apply_fxs
-import datagen.path as pth
-import parser._json as jsn, parser._toml as tml
-from neuralnet.utils import retrieve_data
-#import neuralnet.model as nnmodel
+from src.datagen.utils import _load, _export, _read, __list_audio_files
+from src.utils.tools import usage, mkrdir
+import src.utils.logger as log
+from src.datagen.fx import _apply_fxs
+import src.utils.path as pth
+import src.parser.json as jsn, src.parser.toml as tml
+from src.neuralnet.utils import retrieve_data
+#import src.neuralnet.model as nnmodel
 
 import sys
 
 def main(dry_dpath, ir_dpath, output_dir):
     # Dataset generation
+
+    if not pth.__exists(output_dir):
+        pth.__make_dir(output_dir)
 
     save_steps, json_fname = tml.value('meta', 'save_steps'), tml.value('meta', 'json_fname')
 
@@ -21,6 +25,8 @@ def main(dry_dpath, ir_dpath, output_dir):
     pth.__create_file(json_fname)
     
     info = dict()
+
+    log.info('Generating dataset of wet samples')
         
     for idx, dryfpath in enumerate(__list_audio_files(dry_dpath)):
         wet_signals = _apply_fxs(_read(dryfpath), impulse_responses)
@@ -36,7 +42,11 @@ def main(dry_dpath, ir_dpath, output_dir):
 
     # Model training
 
+    log.info('Shaping data to feed them to the model')
+
     data, labels = retrieve_data()
+
+    log.info('Training the model')
 
     """
     model = nnmodel._init()

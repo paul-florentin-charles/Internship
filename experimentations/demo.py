@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import datagen.path as pth
-import parser._toml as tml
+import src.utils.path as pth
+import src.utils.logger as log
+import src.parser.toml as tml
 from main import main
 
 from subprocess import call
@@ -10,12 +11,16 @@ from shutil import unpack_archive
 
     
 def demo():
+    log.init()
+    
     # Scraping data from URLs
     
     base_url = tml.value('demo', 'datasets_url')
 
     note_url = ''.join([base_url, 'note_dataset_', tml.value('demo', 'size'), '.tar.gz'])
     fx_url = ''.join([base_url, 'ir_dataset_', tml.value('demo', 'size'), '.zip'])
+
+    log.info('Scraping datasets of notes and impulse responses')
 
     call(['curl', '-O', note_url, '-O', fx_url])
 
@@ -33,9 +38,9 @@ def demo():
 
     # Execute main script
 
-    pth.__make_dir(dnames[2])
-
     main(*dnames)
+
+    log.shutdown()
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import parser._toml as tml, parser._json as jsn
-from datagen.utils import _read, _load, __mono, __convert
+import src.parser.toml as tml, src.parser.json as jsn
+from src.datagen.utils import _read, _load, __mono, __convert
 
 from random import choice
 import numpy as np
@@ -17,4 +17,16 @@ def retrieve_data(preprocess=__mono, _type=None):
         labels = np.vstack((labels, __convert(_read(key), preprocess, _type)))
     
     return np.delete(data, 0, 0), np.delete(labels, 0, 0)
-        
+
+'''
+def retrieve_data(preprocess=__mono, _type=None):
+    _dict = jsn._load(tml.value('meta', 'json_fname'))
+
+    data, labels = [] * 2
+    for key in _dict:
+        data.append(__convert(choice(_load(_dict[key])), preprocess, _type))
+        labels.append(__convert(_read(key), preprocess, _type))
+    
+    return np.asarray(data), np.asarray(labels)
+
+'''
