@@ -6,7 +6,7 @@ import src.utils.logger as log
 import src.parser.toml as tml
 from src.run import run
 
-from subprocess import call
+import requests as req
 from shutil import unpack_archive
 
     
@@ -22,14 +22,16 @@ def demo():
 
     log.info('Scraping datasets of notes and impulse responses')
 
-    # TODO: check pysftp get method to download file
-    call(['curl', '-O', note_url, '-O', fx_url])
+    note_fname, fx_fname = map(pth.__file_name, (note_url, fx_url))
+
+    note_content, fx_content = req.get(note_url).content, req.get(fx_url).content
+
+    pth.__write_file(note_fname, note_content)
+    pth.__write_file(fx_fname, fx_content)
 
     # Extracting data
 
     dnames = tml.value('demo', 'dnames')
-
-    note_fname, fx_fname = map(pth.__file_name, (note_url, fx_url))
 
     unpack_archive(note_fname, dnames[0])
     unpack_archive(fx_fname, dnames[1])

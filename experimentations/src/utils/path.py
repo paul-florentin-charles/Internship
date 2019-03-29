@@ -10,7 +10,7 @@ from pathlib import Path
 def __path(fpath):
     return Path(fpath)
 
-## Path segmentation ##
+## path segmentation ##
 
 def __file_extension(fpath):
     return __path(fpath).suffix
@@ -25,7 +25,7 @@ def __file_name(fpath):
 def __parent_path(fpath):
     return __path(fpath).parent
 
-## Path modification ##
+## path modification ##
 
 def __join_path(lpath, rpath):
     return __path(lpath).joinpath(__path(rpath))
@@ -36,7 +36,7 @@ def __with_name(fpath, fname):
 def __with_extension(fpath, fextension):
     return __path(fpath).with_suffix(fextension)
 
-## Path booleans ##
+## path booleans ##
 
 def __exists(path):
     return __path(path).exists()
@@ -47,7 +47,7 @@ def __is_file(path):
 def __is_dir(path):
     return __path(path).is_dir()
 
-## Path creation ##
+## file/dir manipulation ##
 
 def __make_dir(path):
     if not __exists(path):
@@ -64,8 +64,12 @@ def __create_file(path, override=True):
 def __remove_file(path):
     if __is_file(path):
         __path(path).unlink()
-        
-## Path miscellaneous ##
+
+def __write_file(path, data):
+    if not __is_dir(path):
+        __path(path).write_bytes(data)
+
+## miscellaneous ##
 
 def __list_files(path, recursively=True):
     if __is_file(path):
