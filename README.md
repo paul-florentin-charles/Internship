@@ -4,11 +4,12 @@ Right now focusing on *Neural Networks* approaches...
 
 Check *resources* directory and its **README** for some content.
 
-`Warning:` *experimentations* folder is highly experimental :radioactive:
+`Warning:` *experimentations* folder is no longer maintained.
+
+Code can be found [here](https://gitgud.io/polochinoc/dereverberation-ml/)
 
 To list **TODOS** in repository, and for your personal usage :gift:
 
 ```shell
 alias todo='grep -rnwiI --exclude-dir={.git} $1 -e TODO'
 ```
-
