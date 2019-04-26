@@ -142,7 +142,7 @@
 - The cross-entropy function in neural networks : [link](https://datascience.stackexchange.com/questions/9302/the-cross-entropy-error-function-in-neural-networks "Cross-entropy")
 - What are the advantages of using Leaky ReLU over normal ReLU in deep learning ? : [link](https://www.quora.com/What-are-the-advantages-of-using-Leaky-Rectified-Linear-Units-Leaky-ReLU-over-normal-ReLU-in-deep-learning "ReLU vs Leaky-ReLU")
 - Principles of training multi-layer neural network using backpropagation [link](http://home.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html "Backpropagation")
-- Role of Bias in Neural Networks : [link]w(https://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks "Bias")
+- Role of Bias in Neural Networks : [link](https://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks "Bias")
 
 ### Blog posts
 
