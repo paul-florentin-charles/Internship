@@ -4,7 +4,7 @@ Right now focusing on *Neural Networks* approaches...
 
 Check *resources* directory and its **README** for some content.
 
-Code can be found [here](https://gitgud.io/polochinoc/dereverberation-ml/)
+Code can be found [here](https://github.com/polochinoc/dereverberation-ml/)
 
 To list **TODOS** in repository, and for your personal usage :gift:
 
